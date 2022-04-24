@@ -31,7 +31,7 @@ export class Server {
 		initRoutes(this.app)
 	}
 
-	private handleErrors (err:Error, req:Express.Request, res:Express.Response, next:Express.NextFunction) {
+	private handleErrors (err:any, req:Express.Request, res:Express.Response, next:Express.NextFunction) {
 		console.log('ERROR')
 		console.error(err.stack)
 		next(err)
