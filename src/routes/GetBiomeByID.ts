@@ -1,7 +1,9 @@
 import { NextFunction, Request, Response } from 'express'
 import fs from 'fs'
+import { getMintedBiomes } from '../helpers/biomes-helpers'
 
 export const GetBiomeByID = async (req: Request, res: Response, next: NextFunction) => {
+    console.log('get biome')
     const id = req.params.id
 
     if (id === 'metadata.json') {
@@ -15,10 +17,11 @@ export const GetBiomeByID = async (req: Request, res: Response, next: NextFuncti
             next(err)
         }
     } else {
-        /** 
-        const mintedBiomes = await getMinted()
-        const biome = mintedBiomes.find(x => x.id === id).data
-        */
+        const mintedBiomes = await getMintedBiomes()
+        console.log(mintedBiomes)
+        const biome = mintedBiomes?.find((x:any) => parseInt(x.id) == parseInt(id))?.data
+        console.log(id, biome)
+        res.status(200).json(biome)
     }
 }
   

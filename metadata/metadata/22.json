@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Sunny sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Cottage hill"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Dragon scimmy"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #22",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmScWGBebrap5FZxaLM5g2bFJFQMk3C6TcmgbgKNQ65nsZ",
+            "mime_type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Sunny sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Rocky road"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Kitty"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #2",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmRWDZhHbMFR6gwpPJEvx1ji3KrfAPgxuHkXC9m5gV5Pv6",
+            "mime_type": "image/png"
+        }
+    ]
+}

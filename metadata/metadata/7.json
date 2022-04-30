@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Sunset sky WIP 2"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Treetops"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Tomb"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #7",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmS9suACzufxE1Y6BdVmB5AefBLeKkQf31fzXWGDCCchp8",
+            "mime_type": "image/png"
+        }
+    ]
+}

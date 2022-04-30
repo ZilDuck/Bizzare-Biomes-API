@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Floating islands WIP"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Dangerous cliff"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Duck Xing"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #12",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmVN168wRjEDkUyvijPBhnkwiJxv3TRBxYRiA1tSoYHAmq",
+            "mime_type": "image/png"
+        }
+    ]
+}

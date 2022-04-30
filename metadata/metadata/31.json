@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Pine forest"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Dark crevice"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Monolith"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #31",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmdhsjbrVXjAE4iANcxoRWVNw3mYKFxSQT2ZrZ65SvTjjd",
+            "mime_type": "image/png"
+        }
+    ]
+}

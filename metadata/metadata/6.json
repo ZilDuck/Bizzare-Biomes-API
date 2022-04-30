@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Comet sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Rocky road"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Monolith"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #6",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmQ7niPDH751iAPkD1qcgcYB4ywVJGWDo8BXNTrGdniYes",
+            "mime_type": "image/png"
+        }
+    ]
+}

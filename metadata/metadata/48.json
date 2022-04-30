@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Pine forest"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Lonely islands WIP cleaned"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Portal"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #48",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://Qme6E6b2WPE3b8azKvUMYfgimAAmqhZPvisUvubCARoAY2",
+            "mime_type": "image/png"
+        }
+    ]
+}

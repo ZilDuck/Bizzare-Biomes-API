@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Desert sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Treetops"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Spaceship"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #18",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmNcHn4wkgnLQV5fCKmJAq63QYfsipy2GG9TWXXaNWEGqJ",
+            "mime_type": "image/png"
+        }
+    ]
+}

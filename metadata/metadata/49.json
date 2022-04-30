@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Floating islands WIP"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Arctic"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Tomb"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #49",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmU11sTUSvNf8rMnNsfbZKsfHobPdxuac8JJiCM34Dx31W",
+            "mime_type": "image/png"
+        }
+    ]
+}

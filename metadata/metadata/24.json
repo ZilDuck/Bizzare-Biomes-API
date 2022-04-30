@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Spiky ridge"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Grassy knoll with ducks"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Portal blue"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #24",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmbSHAY9aMQkeTfAWBu3GPdbFDcyzuUM5VtiAP5jqTzupk",
+            "mime_type": "image/png"
+        }
+    ]
+}

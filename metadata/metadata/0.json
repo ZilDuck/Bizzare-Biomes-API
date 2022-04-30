@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Aurora borealis sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Treetops"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Deer"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #0",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmcyV5Lfe4JrBdnL1p2cRneVLGHhBwnrCyUvZR88phTt9w",
+            "mime_type": "image/png"
+        }
+    ]
+}

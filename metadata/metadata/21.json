@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Floating islands WIP"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Shroomland"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Portal"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #21",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmXSj8yhynP8VLHmgjmKgB3gLwE58V1FmLeKfeafCWqdps",
+            "mime_type": "image/png"
+        }
+    ]
+}

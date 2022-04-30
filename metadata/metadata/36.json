@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Zelda moon"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Dry desert cleaned"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Easter box"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #36",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmVpSkhUCsG5SCEKhntCz2bPzRS96wqizzwHmiS8MW1oAD",
+            "mime_type": "image/png"
+        }
+    ]
+}

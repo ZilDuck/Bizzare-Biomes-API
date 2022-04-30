@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Volcano sky fixed"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Pyramid stone"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Easter box"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #39",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmdfoQ5GnzE6x4mnFwahffGQRcWrfBBkphXTet8UoM4ZWT",
+            "mime_type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Zelda moon"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Cottage hill"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Crown"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #32",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmVYTmNJQaqbpVWuvZ3e2kZeamxPKDa1AQ5xEi9TGriiDf",
+            "mime_type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Mountains sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Dangerous cliff"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Kitty"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #19",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://Qme2KEgKvkC7hu5W65tHkTcBfyuB5F2t3n2wEpo4uwbHzT",
+            "mime_type": "image/png"
+        }
+    ]
+}

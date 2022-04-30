@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Zelda moon"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Dark crevice"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Pancakes"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #10",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmTVryMRNrgCL8bDbk3H8TgR7xujZzjk2EhyCgkdJUALhd",
+            "mime_type": "image/png"
+        }
+    ]
+}

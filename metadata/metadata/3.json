@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Islands sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Dark crevice"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Kitty"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #3",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmQ3K8ytgUDKDoJutSdrHz7ypk9t2TLjXRa8mvNFQyuNcc",
+            "mime_type": "image/png"
+        }
+    ]
+}

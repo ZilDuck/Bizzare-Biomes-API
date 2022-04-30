@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Sky serpent"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Shroomland"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Totem pole"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #34",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmS1F5my6ZQqrXSqiSQamFibiuUDbHN9DvxTJUDYXq3A1N",
+            "mime_type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Sunset sky WIP 2"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Pyramid stone"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Duck Xing"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #45",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://Qmar8EgFN8nAwG89A6q8F8PswVcry5VR5BR2qzs2nQHgCh",
+            "mime_type": "image/png"
+        }
+    ]
+}

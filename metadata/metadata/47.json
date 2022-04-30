@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "City scape WIP"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Pyramid stone"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Tomb"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #47",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmeDbMfJfGxpig2KUVgoZJu2Xq2RdD25Nw36ex4NPGvFH2",
+            "mime_type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Spiky ridge"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Gem fields"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Pancakes"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #37",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmPw7dg5JXCnsdCEgQUkjTo7QXJ2JUCkHziLmCuZ2nJFjF",
+            "mime_type": "image/png"
+        }
+    ]
+}

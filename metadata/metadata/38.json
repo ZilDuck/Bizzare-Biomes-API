@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Desert sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Cottage hill"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Totem pole"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #38",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmVaJf7aJszKMXv3iWSpMUVCHRp12qWTYQgTaAFxGUA3Pi",
+            "mime_type": "image/png"
+        }
+    ]
+}

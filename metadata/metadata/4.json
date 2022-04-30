@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Great wave"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Cottage hill"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Duck Xing"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #4",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://Qmc2eQKbjKxwejui56Vonh38gW6Jif2nFuGLD89XCZCYUP",
+            "mime_type": "image/png"
+        }
+    ]
+}

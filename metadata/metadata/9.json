@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Mountains sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Grassy knoll with ducks"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Sword"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #9",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmfMyehAJTox9MA4PoKhSLBwPKMLxJedzSE8cbCwM9iVnt",
+            "mime_type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Sunny sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Cottage hill"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Beach stuff"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #27",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmTqCRT1dnNJQnZPYqbdCDeat5eh1ABgWFE2xo2gj5CY8b",
+            "mime_type": "image/png"
+        }
+    ]
+}

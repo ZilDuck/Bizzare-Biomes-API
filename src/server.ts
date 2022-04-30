@@ -17,7 +17,8 @@ export class Server {
 
 	public start() {
 		this.app.listen(settings.PORT)
-		console.log(`Server started at ${settings.PORT}`)
+		console.log(`⚡️[project-ponds-api]: Server is running at http://localhost:${settings.PORT}`)
+		
 	}
 
 	private setConfig() {

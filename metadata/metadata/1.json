@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Rainbow sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Dry desert cleaned"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Portal blue"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #1",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmVcrsjAmSpemy5kHnymF7pFGpbzpjevtxXntggGbnHATM",
+            "mime_type": "image/png"
+        }
+    ]
+}

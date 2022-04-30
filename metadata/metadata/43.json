@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Sunset sky WIP 2"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Arctic"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Deer"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #43",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmbLD2Z3WGDuYfw7RKPu971CLEgWWMW1kBYE4zkasXMD1X",
+            "mime_type": "image/png"
+        }
+    ]
+}

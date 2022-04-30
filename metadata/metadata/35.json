@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Japanese pagoda"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Moonscape"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Totem pole"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #35",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://Qmc9xUxPYQrqm8hCaCRRwEv7JenS12SKqQrLzUvCqR1vBA",
+            "mime_type": "image/png"
+        }
+    ]
+}

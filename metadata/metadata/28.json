@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Islands sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Lonely islands WIP cleaned"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Easter box"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #28",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmS7tyjyn41RQ8Upt3podcaNrfUHbDVRBGM1FAvumQELAv",
+            "mime_type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "1 environment",
+            "value": "Pine forest"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "2 environment",
+            "value": "Treetops"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "3",
+            "value": "Suitcase"
+        }
+    ],
+    "description": "description of your collection",
+    "name": "Ponds Alpha #8",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmZSGQpQhUA2KUTuoTuR7wfbaUbZjAJ4tgA8GxR7fxNzfN",
+            "mime_type": "image/png"
+        }
+    ]
+}
