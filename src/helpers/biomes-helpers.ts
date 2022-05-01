@@ -1,5 +1,6 @@
 import { getMintedCount, getTokenHolders } from "./zilliqa-helpers"
 import fs from 'fs'
+import { toBech32Address } from "@zilliqa-js/zilliqa";
 
 let allBiomes: { id: number; data: Buffer }[] = []
 const metadataDir = '../../metadata/metadata/'
@@ -23,7 +24,16 @@ const getMintedBiomes = async () => {
       
       const ducksMinted = allBiomes.filter(x => x.id <= currentID)
       
-      const matchedOwners = ducksMinted.map(x => ({owner: holders!.find(y => parseInt(y.id) == x.id)!.address, ...x}))
+      const matchedOwners = ducksMinted.map(x => {
+        let base16 = holders!.find(y => parseInt(y.id) == x.id)!.address
+        let bech32 = toBech32Address(base16)
+        return {
+          base16,
+          bech32,
+          ...x
+        }
+      })
+
       console.log(matchedOwners)
       return matchedOwners
   } catch (err) {

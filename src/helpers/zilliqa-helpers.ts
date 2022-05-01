@@ -32,9 +32,8 @@ const getTokenHolders = async () => {
           "token_owners"
       )).result.token_owners
   
-      const arrayResult = Object.entries(result).map(x => ({ id: x[0], address: x[1] }))
-      let holders = arrayResult
-      return holders
+      const arrayResult = Object.entries(result).map((x:any) => ({ id: x[0], address: x[1] }))
+      return arrayResult
   } catch (err) {
 
   }

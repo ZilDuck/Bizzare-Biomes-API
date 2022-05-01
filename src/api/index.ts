@@ -35,7 +35,7 @@ const getNFT = async (contract:string, id:string|number) => {
   }
 }
 
-async function getNFTsForAddress(address: string) {
+async function getNFTsForAddress(address: string, page:number, size:number) {
   type UserNFTs = {
     contract:string,
     zrc6:boolean,
@@ -47,6 +47,7 @@ async function getNFTsForAddress(address: string) {
   }
   
   try {
+    console.log(`${base}/address/${address}/nft`)
     const { data, status } = await axios.get(
       `${base}/address/${address}/nft`,
       {
@@ -56,17 +57,29 @@ async function getNFTsForAddress(address: string) {
       }
     )
 
-    console.log(data)
+    
+
     let allNFTs = []
+    let count = 0
+
     for (let x of data) {
       for (let id of x.tokenIds) {
-        allNFTs.push(getNFT(x.contract, id))
+        count++
+        if(count > (page - 1) * size && count <= page * size) allNFTs.push(getNFT(x.contract, id))
       }
     }
-    
-    //console.log(JSON.stringify(test, null, 2))
 
-    return await Promise.all(allNFTs)
+    const pagination = {
+      page,
+      size,
+      total_pages: Math.ceil(count / size),
+      total_elements: count
+    }
+    const paginatedNFTs = await Promise.all(allNFTs)
+    return {
+      pagination,
+      ownedNFTs: paginatedNFTs
+    } 
   } catch (error) {
     if (axios.isAxiosError(error)) {
       console.log('error message: ', error.message);
