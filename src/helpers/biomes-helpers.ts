@@ -20,8 +20,11 @@ const getMintedBiomes = async () => {
   try {
       const currentID = await getMintedCount()
       const holders = await getTokenHolders()
+      
       const ducksMinted = allBiomes.filter(x => x.id <= currentID)
+      
       const matchedOwners = ducksMinted.map(x => ({owner: holders!.find(y => parseInt(y.id) == x.id)!.address, ...x}))
+      console.log(matchedOwners)
       return matchedOwners
   } catch (err) {
       console.log(err)

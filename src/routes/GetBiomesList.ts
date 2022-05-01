@@ -1,110 +1,146 @@
-import { Request, Response } from 'express'
-
 export type worldLevelBiome = {
   name:string,
   sitePath:string,
-  imagePath:string
+  imagePath:string,
+  bottomColour?:string,
+  topColour?:string
 }
-
 const biomesList: Array<worldLevelBiome> = [
-  {
-      name: 'Aurora',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/Aurora borealis sky.png'
-  },
-  {
-      name: 'Big clouds',
-      sitePath: 'Big clouds',
-      imagePath: '/assets/backgrounds/Big clouds.png'
-  },
-  {
-      name: 'Cityscape',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/City scape WIP.png'
-  },
-  {
-      name: 'Comet sky',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/Comet sky.png'
-  },
-  {
-      name: 'Desert sky',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/Desert sky.png'
-  },
-  {
-      name: 'Floating islands',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/Floating islands WIP.png'
-  },
-  {
-      name: 'Great wave',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/Great wave.png'
-  },
-  {
-      name: 'Islands sky',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/Islands sky.png'
-  },
-  {
-      name: 'Japanese pagoda',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/Japanese pagoda.png'
-  },
-  {
-      name: 'Mountain sky',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/Mountains sky.png'
-  },
-  {
-      name: 'Night sky',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/Night sky.png'
-  },
-  {
-      name: 'Pine forest',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/Pine forest.png'
-  },
-  {
-      name: 'Rainbow sky',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/Rainbow sky.png'
-  },
-  {
-      name: 'Sky serpent',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/Sky serpent.png'
-  },
-  {
-      name: 'Spiky ridge',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/Spiky ridge.png'
-  },
-  {
-      name: 'Sunny sky',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/Sunny sky.png'
-  },
-  {
-      name: 'Sunny sky two',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/Sunset sky WIP 2.png'
-  },
-  {
-      name: 'Volcano sky',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/Volcano sky fixed.png'
-  },
-  {
-      name: 'Dark moon',
-      sitePath: 'aurora',
-      imagePath: '/assets/backgrounds/Zelda moon.png'
-  }
-]
+    {
+        name: 'Aurora',
+        sitePath: 'aurora',
+        imagePath: '/assets/backgrounds/Aurora borealis sky.png',
+        bottomColour: '#00383e',
+        topColour: '#00383e'
+    },
+    {
+        name: 'Big clouds',
+        sitePath: 'big-clouds',
+        imagePath: '/assets/backgrounds/Big clouds.png',
+        bottomColour: '#e6f1f2',
+        topColour: '#9cdaf2'
+    },
+    {
+        name: 'Cityscape',
+        sitePath: 'cityscape',
+        imagePath: '/assets/backgrounds/City scape WIP.png',
+        bottomColour: '#ea976d',
+        topColour: '#84bcc2'
+    },
+    {
+        name: 'Comet sky',
+        sitePath: 'comet-sky',
+        imagePath: '/assets/backgrounds/Comet sky.png',
+        bottomColour: '#00383e',
+        topColour: '#48597e'
+    },
+    {
+        name: 'Desert sky',
+        sitePath: 'desert-sky',
+        imagePath: '/assets/backgrounds/Desert sky.png',
+        bottomColour: '#00383e',
+        topColour: '#f5e7df'
+    },
+    {
+        name: 'Floating islands',
+        sitePath: 'floating-islands',
+        imagePath: '/assets/backgrounds/Floating islands WIP.png',
+        bottomColour: '#00383e',
+        topColour: '#fdc3cb'
+    },
+    {
+        name: 'Great wave',
+        sitePath: 'great-wave',
+        imagePath: '/assets/backgrounds/Great wave.png',
+        bottomColour: '#00383e',
+        topColour: '#8bc7d6'
+    },
+    {
+        name: 'Islands sky',
+        sitePath: 'islands-sky',
+        imagePath: '/assets/backgrounds/Islands sky.png',
+        bottomColour: '#00383e',
+        topColour: '#edffff'
+    },
+    {
+        name: 'Japanese pagoda',
+        sitePath: 'japanese-pagoda',
+        imagePath: '/assets/backgrounds/Japanese pagoda.png',
+        bottomColour: '#00383e',
+        topColour: '#d1ecfa'
+    },
+    {
+        name: 'Mountain sky',
+        sitePath: 'mountains-sky',
+        imagePath: '/assets/backgrounds/Mountains sky.png',
+        bottomColour: '#00383e',
+        topColour: '#fff0e3'
+    },
+    {
+        name: 'Night sky',
+        sitePath: 'night-sky',
+        imagePath: '/assets/backgrounds/Night sky.png',
+        bottomColour: '#00383e',
+        topColour: '#447197'
+    },
+    {
+        name: 'Pine forest',
+        sitePath: 'pine-forest',
+        imagePath: '/assets/backgrounds/Pine forest.png',
+        bottomColour: '#50cf7d',
+        topColour: '#3477b7'
+    },
+    {
+        name: 'Rainbow sky',
+        sitePath: 'rainbow-sky',
+        imagePath: '/assets/backgrounds/Rainbow sky.png',
+        bottomColour: '#00383e',
+        topColour: '#cceef7'
+    },
+    {
+        name: 'Sky serpent',
+        sitePath: 'sky-serpent',
+        imagePath: '/assets/backgrounds/Sky serpent.png',
+        bottomColour: '#00383e',
+        topColour: '#afb8bd'
+    },
+    {
+        name: 'Spiky ridge',
+        sitePath: 'spiky-ridge',
+        imagePath: '/assets/backgrounds/Spiky ridge.png',
+        bottomColour: '#00383e',
+        topColour: '#fcb698'
+    },
+    {
+        name: 'Sunny sky',
+        sitePath: 'sunny-sky',
+        imagePath: '/assets/backgrounds/Sunny sky.png',
+        bottomColour: '#00383e',
+        topColour: '#90ebd0'
+    },
+    {
+        name: 'Sunny sky two',
+        sitePath: 'sunset-sky',
+        imagePath: '/assets/backgrounds/Sunset sky WIP 2.png',
+        bottomColour: '#00383e',
+        topColour: '#ffae4a'
+    },
+    {
+        name: 'Volcano sky',
+        sitePath: 'volcano-sky',
+        imagePath: '/assets/backgrounds/Volcano sky fixed.png',
+        bottomColour: '#00383e',
+        topColour: '#ab9892'
+    },
+    {
+        name: 'Dark moon',
+        sitePath: 'dark-moon',
+        imagePath: '/assets/backgrounds/Zelda moon.png',
+        bottomColour: '#00383e',
+        topColour: '#99233e'
+    }
+  ]
 
-
-export const GetBiomesList = (req: Request, res: Response) => {
-  res.send(biomesList)
+export const GetBiomesList = () => {
+  return biomesList
 }

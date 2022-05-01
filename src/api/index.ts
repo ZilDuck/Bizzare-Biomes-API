@@ -56,6 +56,7 @@ async function getNFTsForAddress(address: string) {
       }
     )
 
+    console.log(data)
     let allNFTs = []
     for (let x of data) {
       for (let id of x.tokenIds) {
