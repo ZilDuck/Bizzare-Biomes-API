@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Rainbow sky"
+            "trait_type": "Background",
+            "value": "Great wave"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Dry desert cleaned"
+            "trait_type": "Foreground",
+            "value": "Shroomland"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Portal blue"
+            "trait_type": "Object",
+            "value": "Pancakes"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #1",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmVcrsjAmSpemy5kHnymF7pFGpbzpjevtxXntggGbnHATM",
+            "uri": "ipfs://QmWdTmY4gW1U4b95vdKSUMzqqZybcK43MsMZn1Vi1wtkoJ",
             "mime_type": "image/png"
         }
     ]

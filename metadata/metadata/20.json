@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Aurora borealis sky"
+            "trait_type": "Background",
+            "value": "Rainbow sky"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Dark crevice"
+            "trait_type": "Foreground",
+            "value": "Pantheon"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Tomb"
+            "trait_type": "Object",
+            "value": "Door frame"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #20",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmSbEkU8DXCgpwFotvSaL9PpmKSothVB6NVQVWErasXQjg",
+            "uri": "ipfs://QmNWPwXs1QW1Zj95bmJPdXTnnEuSGVGf1RBRHSudEBBK1Z",
             "mime_type": "image/png"
         }
     ]

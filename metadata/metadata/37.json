@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Spiky ridge"
+            "trait_type": "Background",
+            "value": "Pine forest"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Gem fields"
+            "trait_type": "Foreground",
+            "value": "Treetops"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Pancakes"
+            "trait_type": "Object",
+            "value": "Monolith"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #37",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmPw7dg5JXCnsdCEgQUkjTo7QXJ2JUCkHziLmCuZ2nJFjF",
+            "uri": "ipfs://QmRqBtrznojh5KYiRq3zjG2S1bGumDd9RDCpVeWqTLiwLF",
             "mime_type": "image/png"
         }
     ]

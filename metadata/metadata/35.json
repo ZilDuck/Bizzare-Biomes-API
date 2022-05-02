@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Japanese pagoda"
+            "trait_type": "Background",
+            "value": "Sunny sky"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Moonscape"
+            "trait_type": "Foreground",
+            "value": "Shroomland"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Totem pole"
+            "trait_type": "Object",
+            "value": "Statue"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #35",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://Qmc9xUxPYQrqm8hCaCRRwEv7JenS12SKqQrLzUvCqR1vBA",
+            "uri": "ipfs://QmP11nPtXtFAU9L9jiAgSa46EaWJuhzERoXbk3x4YWeGPZ",
             "mime_type": "image/png"
         }
     ]

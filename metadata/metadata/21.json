@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Floating islands WIP"
+            "trait_type": "Background",
+            "value": "Sunny sky"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Shroomland"
+            "trait_type": "Foreground",
+            "value": "Cottage hill"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Portal"
+            "trait_type": "Object",
+            "value": "Duck Xing"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #21",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmXSj8yhynP8VLHmgjmKgB3gLwE58V1FmLeKfeafCWqdps",
+            "uri": "ipfs://QmQEqY6kcpjJZSQmiQKHCv4aunGj84KPKZwCozEwuoKNBG",
             "mime_type": "image/png"
         }
     ]

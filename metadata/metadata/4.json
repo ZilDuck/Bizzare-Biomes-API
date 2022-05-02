@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Great wave"
+            "trait_type": "Background",
+            "value": "Sunset sky WIP 2"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Cottage hill"
+            "trait_type": "Foreground",
+            "value": "Pyramid stone"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Duck Xing"
+            "trait_type": "Object",
+            "value": "Dragon scimmy"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #4",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://Qmc2eQKbjKxwejui56Vonh38gW6Jif2nFuGLD89XCZCYUP",
+            "uri": "ipfs://QmThFKs7ZVSTUjisckBiRfscXz9Q9XTTYMyrjRxAuN2mYP",
             "mime_type": "image/png"
         }
     ]

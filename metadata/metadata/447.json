@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Zelda moon"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Shroomland"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Deer"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #447",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmVsDFxLU8ctsPMPmmhsqN1EiuGYmHUnEduDzrVSepVcJ5",
+            "mime_type": "image/png"
+        }
+    ]
+}

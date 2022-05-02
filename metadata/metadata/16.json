@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Rainbow sky"
+            "trait_type": "Background",
+            "value": "Zelda moon"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Lonely islands WIP cleaned"
+            "trait_type": "Foreground",
+            "value": "Pantheon"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Door frame"
+            "trait_type": "Object",
+            "value": "Portal"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #16",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmU8tr7REBVoAyLBJrJ1EYnGYqMaw7bUFWHqwmkJ4MbiZR",
+            "uri": "ipfs://QmcPvbfAx5CDioM8qHLXnnLZfag4UA9dXEX8fpkYXKNvy5",
             "mime_type": "image/png"
         }
     ]

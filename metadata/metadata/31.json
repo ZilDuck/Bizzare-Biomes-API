@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Pine forest"
+            "trait_type": "Background",
+            "value": "Floating islands WIP"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Dark crevice"
+            "trait_type": "Foreground",
+            "value": "Dangerous cliff"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Monolith"
+            "trait_type": "Object",
+            "value": "Suitcase"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #31",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmdhsjbrVXjAE4iANcxoRWVNw3mYKFxSQT2ZrZ65SvTjjd",
+            "uri": "ipfs://QmZp5YZ49AKBimTUBiBWr5rbB6yeMn94g41qa9w29aWxcS",
             "mime_type": "image/png"
         }
     ]

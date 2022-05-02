@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Volcano sky fixed"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Dry desert cleaned"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Totem pole"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #800",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmXLovKtzcudZ4wze16B66mX3HSv9DK9dZNEFCw9oPFZ1d",
+            "mime_type": "image/png"
+        }
+    ]
+}

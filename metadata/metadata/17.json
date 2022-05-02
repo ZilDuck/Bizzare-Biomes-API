@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Mountains sky"
+            "trait_type": "Background",
+            "value": "Big clouds"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Gem fields"
+            "trait_type": "Foreground",
+            "value": "Pyramid stone"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Kitty"
+            "trait_type": "Object",
+            "value": "Crown"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #17",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmPed7E7jMUStfXVh2nwxKooT2qzRTy9pQomssFYVwzdK8",
+            "uri": "ipfs://QmPiMY4Rbvrb2mhz87yPi7vHJdaLsTdGvTT6eky1GineCK",
             "mime_type": "image/png"
         }
     ]

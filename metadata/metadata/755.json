@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Islands sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Gem fields"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Tomb"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #755",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://Qma72SfdbkCGpFQWtzzGFb24ug4SMUB33b9kndZqWCdwbB",
+            "mime_type": "image/png"
+        }
+    ]
+}

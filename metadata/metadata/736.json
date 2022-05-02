@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Japanese pagoda"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Golf course"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Sword"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #736",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmdaFxK6Da71QgbHPmiaZVgAAT7nX5a8a2XEh44DMQw1Zu",
+            "mime_type": "image/png"
+        }
+    ]
+}

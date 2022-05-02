@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Great wave"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Arctic"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Sword"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #181",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmRYkUyYuQC2rGnRqH6jg6ccViWDGPdcjwJjKvV7qyNZfb",
+            "mime_type": "image/png"
+        }
+    ]
+}

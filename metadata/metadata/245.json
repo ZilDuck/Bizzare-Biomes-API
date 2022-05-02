@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Sky serpent"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Golf course"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Totem pole"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #245",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmZ1vSpDfbDkgjx9suK4XTaCHsi28Q1otoZ9NdBXumUCZ3",
+            "mime_type": "image/png"
+        }
+    ]
+}

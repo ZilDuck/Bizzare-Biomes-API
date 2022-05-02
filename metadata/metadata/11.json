@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Japanese pagoda"
+            "trait_type": "Background",
+            "value": "City scape WIP"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Pyramid stone"
+            "trait_type": "Foreground",
+            "value": "Grassy knoll with ducks"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Door frame"
+            "trait_type": "Object",
+            "value": "Sword"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #11",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmduhxDTSqbqgVBTLiDhxa9tgRuimwjt6F6wXJSnBCg5ES",
+            "uri": "ipfs://QmV9Etb4GWVNCMTp74MoT46NMNi1VYuJNWRPveQMgo1gDX",
             "mime_type": "image/png"
         }
     ]

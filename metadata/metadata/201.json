@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Sky serpent"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Dangerous cliff"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Deer"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #201",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmXudxaS2VNhXPpuT5Fwn6thgV9D3XAdVtgyzaD2jb2yVq",
+            "mime_type": "image/png"
+        }
+    ]
+}

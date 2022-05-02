@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Aurora borealis sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Gem fields"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Sword"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #1015",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmWqjhsa16qS6NgmJ97drsXo37D3JnCWkNKCm1kqYsbmHJ",
+            "mime_type": "image/png"
+        }
+    ]
+}

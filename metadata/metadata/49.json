@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Floating islands WIP"
+            "trait_type": "Background",
+            "value": "Big clouds"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Arctic"
+            "trait_type": "Foreground",
+            "value": "Cottage hill"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Tomb"
+            "trait_type": "Object",
+            "value": "Deer"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #49",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmU11sTUSvNf8rMnNsfbZKsfHobPdxuac8JJiCM34Dx31W",
+            "uri": "ipfs://QmSYKsYdwAb1msnmrEf5UDcLD3JN5cwFMozEPGx5jzcLTh",
             "mime_type": "image/png"
         }
     ]

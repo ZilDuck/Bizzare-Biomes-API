@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Mountains sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Golf course"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Pancakes"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #714",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmTYbwvs5tLk4F6rbdxCoHbjMgJPbZ9FBf7jAQNt7jwnKb",
+            "mime_type": "image/png"
+        }
+    ]
+}

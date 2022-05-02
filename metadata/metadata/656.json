@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Floating islands WIP"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Cottage hill"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Kitty"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #656",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmQ5J7EPAAeiyimnGgfvXniDdiv7BgD23sLHVh9BRwwghF",
+            "mime_type": "image/png"
+        }
+    ]
+}

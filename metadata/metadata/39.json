@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Volcano sky fixed"
+            "trait_type": "Background",
+            "value": "Sunset sky WIP 2"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Pyramid stone"
+            "trait_type": "Foreground",
+            "value": "Pantheon"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Easter box"
+            "trait_type": "Object",
+            "value": "Spaceship"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #39",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmdfoQ5GnzE6x4mnFwahffGQRcWrfBBkphXTet8UoM4ZWT",
+            "uri": "ipfs://QmYGiv33CpJexySaK84bHJGuLwfknb1DvtGeGmjAS8LrJh",
             "mime_type": "image/png"
         }
     ]

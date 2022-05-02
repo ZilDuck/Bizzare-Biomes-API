@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Comet sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Pantheon"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Sword"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #610",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmVegmQktrA31onasiDcQnfqJNZR4QNkVC3jK5wyDH9WwD",
+            "mime_type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Sunset sky WIP 2"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Pyramid stone"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Kitty"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #104",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmdYnJ16e1kz4Cii2BFPUn8SbNfz5zVvkHZAVT8ugQAraz",
+            "mime_type": "image/png"
+        }
+    ]
+}

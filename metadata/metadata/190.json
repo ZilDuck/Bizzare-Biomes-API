@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Sunset sky WIP 2"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Golf course"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Sword"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #190",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmRrR6iPT3dxzeEVZm1WDLtvTtRdDD4CXaW1tbfApfjPDw",
+            "mime_type": "image/png"
+        }
+    ]
+}

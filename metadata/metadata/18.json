@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Desert sky"
+            "trait_type": "Background",
+            "value": "Great wave"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Treetops"
+            "trait_type": "Foreground",
+            "value": "Dangerous cliff"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Spaceship"
+            "trait_type": "Object",
+            "value": "Door frame"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #18",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmNcHn4wkgnLQV5fCKmJAq63QYfsipy2GG9TWXXaNWEGqJ",
+            "uri": "ipfs://QmPTHMKc8PLBf5CCX8ZgvuaqnGZ7mc26PykvWWvg6dBaQx",
             "mime_type": "image/png"
         }
     ]

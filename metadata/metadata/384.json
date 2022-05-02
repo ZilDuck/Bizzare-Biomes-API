@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Islands sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Lonely islands WIP cleaned"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Pancakes"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #384",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmZix8Y5aifQDyqT5BD1uukp2BNFshvjo2ao9Zz2qXGyY2",
+            "mime_type": "image/png"
+        }
+    ]
+}

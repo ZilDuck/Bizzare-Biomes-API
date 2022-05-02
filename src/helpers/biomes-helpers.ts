@@ -1,21 +1,22 @@
 import { getMintedCount, getTokenHolders } from "./zilliqa-helpers"
-import fs from 'fs'
 import { toBech32Address } from "@zilliqa-js/zilliqa";
 
 let allBiomes: { id: number; data: Buffer }[] = []
 const metadataDir = '../../metadata/metadata/'
 
 const loadBiomesOnStart = () => {
-    for (let id = 1; id <= 49; id++) {
+    for (let id = 1; id <= 2048; id++) {
+      try {
         const filePath = `${metadataDir}${id}.json`
         const data =  require(filePath)
 
         allBiomes.push({ id: id, data: data })
+      } catch (err) {
+        
+      }
     }
 }
 loadBiomesOnStart()
-
-
 
 const getMintedBiomes = async () => {
   try {
@@ -34,7 +35,7 @@ const getMintedBiomes = async () => {
         }
       })
 
-      console.log(matchedOwners)
+      
       return matchedOwners
   } catch (err) {
       console.log(err)

@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Comet sky"
+            "trait_type": "Background",
+            "value": "Zelda moon"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Dangerous cliff"
+            "trait_type": "Foreground",
+            "value": "Grassy knoll with ducks"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Dragon scimmy"
+            "trait_type": "Object",
+            "value": "Door frame"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #15",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmVfETjPbWFtMAamXi2gZ2Dr9KGvfyNh33CTw1ckNB5vjd",
+            "uri": "ipfs://QmPkpPiCF14tQKpPKQqaR79Bj618RhUtYHyTwWyQoftNG7",
             "mime_type": "image/png"
         }
     ]

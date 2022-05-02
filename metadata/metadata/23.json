@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Islands sky"
+            "trait_type": "Background",
+            "value": "Comet sky"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Lonely islands WIP cleaned"
+            "trait_type": "Foreground",
+            "value": "Gem fields"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Suitcase"
+            "trait_type": "Object",
+            "value": "Beach stuff"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #23",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmU3C8cxU9Fdcefx413QaEan8a5UoFFiqCahkFVBC5L429",
+            "uri": "ipfs://QmXwXTQkPk6m6LPh5EER3nTWgcjoSL6bJUkw2FruPk9Mj7",
             "mime_type": "image/png"
         }
     ]

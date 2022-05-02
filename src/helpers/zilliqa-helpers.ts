@@ -22,7 +22,7 @@ const zil_ws = {
 const zilliqa = new Zilliqa(zil_api)
 
 const getMintedCount = async () => {
-  return 30
+  return 1000
 }
 
 const getTokenHolders = async () => {

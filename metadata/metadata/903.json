@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Zelda moon"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Treetops"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Statue"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #903",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmRPDt9bC8wtmbx5gwqSzxQrEDd4qo6mcm1gGtsH58k4Ag",
+            "mime_type": "image/png"
+        }
+    ]
+}

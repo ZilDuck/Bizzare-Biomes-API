@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Aurora borealis sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Lonely islands WIP cleaned"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Duck Xing"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #330",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmWaiAxWYZcnyAijZAfDnKmCjPfocYg5gEyCG9LZ4js4HB",
+            "mime_type": "image/png"
+        }
+    ]
+}

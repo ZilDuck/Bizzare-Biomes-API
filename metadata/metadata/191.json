@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Desert sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Shroomland"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Sword"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #191",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmUiwyripVRBKwHaSLzLc5ogXqB8JrDMTyi8pTLsuXuuDk",
+            "mime_type": "image/png"
+        }
+    ]
+}

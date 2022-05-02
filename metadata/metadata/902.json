@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Rainbow sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Rocky road"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Totem pole"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #902",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://Qme78b3PLJub12kxZQvz7qzgXQccDqPVZ3X7CdvAb9CBgo",
+            "mime_type": "image/png"
+        }
+    ]
+}

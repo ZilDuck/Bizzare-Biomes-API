@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Sunset sky WIP 2"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Treetops"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Portal blue"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #792",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmSUU3Rot56CdDFJZYLR2G4gbx2zeE5PiJTiptLzfeKvSz",
+            "mime_type": "image/png"
+        }
+    ]
+}

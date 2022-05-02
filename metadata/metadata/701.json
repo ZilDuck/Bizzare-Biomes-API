@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Japanese pagoda"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Pyramid stone"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Door frame"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #701",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmduhxDTSqbqgVBTLiDhxa9tgRuimwjt6F6wXJSnBCg5ES",
+            "mime_type": "image/png"
+        }
+    ]
+}

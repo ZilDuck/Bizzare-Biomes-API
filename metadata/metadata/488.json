@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Islands sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Dark crevice"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Portal"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #488",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmXEWdumerxiu3x985PDcciWLHwJmi9qYB6ku9hbCUvcbk",
+            "mime_type": "image/png"
+        }
+    ]
+}

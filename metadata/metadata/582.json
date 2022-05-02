@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Sunset sky WIP 2"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Grassy knoll with ducks"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Sword"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #582",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmRUJTU4Xhu7aMSd4Viny9YZto6yaCAEadUDjK9Rn4vDpW",
+            "mime_type": "image/png"
+        }
+    ]
+}

@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Islands sky"
+            "trait_type": "Background",
+            "value": "Sunny sky"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Rocky road"
+            "trait_type": "Foreground",
+            "value": "Gem fields"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Door frame"
+            "trait_type": "Object",
+            "value": "Portal blue"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #13",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmZDjCVrcPgq8SAw43DznhGyPQTyMP1WviNxmpniCUP4Z3",
+            "uri": "ipfs://QmXR5KPewe6pz1N1D1bG1oszaSUHeUa57g3ftiFeWcHbDK",
             "mime_type": "image/png"
         }
     ]

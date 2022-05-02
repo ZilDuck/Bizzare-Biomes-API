@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "City scape WIP"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Golf course"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Sword"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #697",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmebqW4q7J67j6BnH6hbRLD69NZanm4GvBVubWR38Fh1ar",
+            "mime_type": "image/png"
+        }
+    ]
+}

@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "City scape WIP"
+            "trait_type": "Background",
+            "value": "Sunset sky WIP 2"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Pyramid stone"
+            "trait_type": "Foreground",
+            "value": "Lonely islands WIP cleaned"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Tomb"
+            "trait_type": "Object",
+            "value": "Statue"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #47",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmeDbMfJfGxpig2KUVgoZJu2Xq2RdD25Nw36ex4NPGvFH2",
+            "uri": "ipfs://Qmet1u3S4LDFmPzm3eDUSfmuDiArfBbU4d3V3Y8MzL6hvP",
             "mime_type": "image/png"
         }
     ]

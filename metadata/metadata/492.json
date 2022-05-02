@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Spiky ridge"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Gem fields"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Kitty"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #492",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmfZBhXNrbhYra9tTceKztaHCpEL4LmgURsiuAm2y9DeAB",
+            "mime_type": "image/png"
+        }
+    ]
+}

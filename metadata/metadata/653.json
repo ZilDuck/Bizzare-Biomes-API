@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Volcano sky fixed"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Treetops"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Totem pole"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #653",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmZyNTUGWW51anuzgUWzNt6BXBjR2btYYqWP9SjQUnR827",
+            "mime_type": "image/png"
+        }
+    ]
+}

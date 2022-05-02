@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "City scape WIP"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Shroomland"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Tomb"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #288",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmVc8xzmYsiZfx2AHDU9tbz3MKQrWX426VL5bXSM4aVALK",
+            "mime_type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Japanese pagoda"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Grassy knoll with ducks"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Crown"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #401",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://Qmbnkei5tRQ8m8YJpwrrFSmbce7DwTVKyqgY5fBUBUqcLY",
+            "mime_type": "image/png"
+        }
+    ]
+}

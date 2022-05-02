@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Floating islands WIP"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Treetops"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Crown"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #381",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmRPFCS4Ps6meS76rq5WmEsNHqcvqNVh5nv4tHGPCsXvsQ",
+            "mime_type": "image/png"
+        }
+    ]
+}

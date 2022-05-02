@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Pine forest"
+            "trait_type": "Background",
+            "value": "Aurora borealis sky"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Lonely islands WIP cleaned"
+            "trait_type": "Foreground",
+            "value": "Dangerous cliff"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Portal"
+            "trait_type": "Object",
+            "value": "Portal blue"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #48",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://Qme6E6b2WPE3b8azKvUMYfgimAAmqhZPvisUvubCARoAY2",
+            "uri": "ipfs://QmQ3yXFwaz9QLTw6iRuDK4r8xdsCti2MZxD4aPns5GC7bX",
             "mime_type": "image/png"
         }
     ]

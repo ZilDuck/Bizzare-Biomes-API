@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Volcano sky fixed"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Rocky road"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Spaceship"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #267",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmYsKpn9xEK5xXmJycijwUY8JRunwWV87AfXah8b5hUVZm",
+            "mime_type": "image/png"
+        }
+    ]
+}

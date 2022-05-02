@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
+            "trait_type": "Background",
             "value": "Sunny sky"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Grassy knoll with ducks"
+            "trait_type": "Foreground",
+            "value": "Treetops"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Easter box"
+            "trait_type": "Object",
+            "value": "Beach stuff"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #26",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmZhSMPsPFYu5whHxqPXgeZdCrp1XQMRKcNRegdamd6swm",
+            "uri": "ipfs://QmUu3Ubjv3jrArhNrWQpiqNSB64hFm3NJDTzvKNB1hFeKr",
             "mime_type": "image/png"
         }
     ]

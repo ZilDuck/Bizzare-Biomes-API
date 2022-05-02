@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Sunny sky"
+            "trait_type": "Background",
+            "value": "Spiky ridge"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Cottage hill"
+            "trait_type": "Foreground",
+            "value": "Rocky road"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
+            "trait_type": "Object",
             "value": "Dragon scimmy"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #22",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmScWGBebrap5FZxaLM5g2bFJFQMk3C6TcmgbgKNQ65nsZ",
+            "uri": "ipfs://QmUQgw4kFom5tqgm5rumu1VUcqja5xhF7PwhHxZ8wKasqB",
             "mime_type": "image/png"
         }
     ]

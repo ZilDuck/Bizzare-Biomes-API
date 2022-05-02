@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Spiky ridge"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Pyramid stone"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Portal"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #88",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmbX4WUczESxbPNk1r8N4hxANX15qxVeBkFXx6TXZwb8fd",
+            "mime_type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Japanese pagoda"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Cottage hill"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Sword"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #270",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmdGiA6bV1VesoneBr1tdXRuYtRxQXiN9hEogzDDPwrAso",
+            "mime_type": "image/png"
+        }
+    ]
+}

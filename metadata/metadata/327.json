@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Desert sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Pyramid stone"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Deer"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #327",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmV1e2cPCPYQ94ar8o61q44xK9Nihs7N5YEpAyCyAFSBVR",
+            "mime_type": "image/png"
+        }
+    ]
+}

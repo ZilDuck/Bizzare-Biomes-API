@@ -2,26 +2,26 @@
     "attributes": [
         {
             "display_type": "string",
-            "trait_type": "1 environment",
-            "value": "Islands sky"
+            "trait_type": "Background",
+            "value": "Big clouds"
         },
         {
             "display_type": "string",
-            "trait_type": "2 environment",
-            "value": "Pyramid stone"
+            "trait_type": "Foreground",
+            "value": "Cottage hill"
         },
         {
             "display_type": "string",
-            "trait_type": "3",
-            "value": "Totem pole"
+            "trait_type": "Object",
+            "value": "Tomb"
         }
     ],
-    "description": "description of your collection",
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
     "name": "Ponds Alpha #14",
     "rarity": 2.83,
     "resources": [
         {
-            "uri": "ipfs://QmQAf8Svu8P4TPULLo3Wzayww1ja6nS8Pz3vqyFwZaDAU7",
+            "uri": "ipfs://QmZHb9PyD4JBDgTGT7NcchvwmSkCVav8AiWbsVqizjrZuX",
             "mime_type": "image/png"
         }
     ]

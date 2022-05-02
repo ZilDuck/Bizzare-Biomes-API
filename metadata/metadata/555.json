@@ -1,0 +1,28 @@
+{
+    "attributes": [
+        {
+            "display_type": "string",
+            "trait_type": "Background",
+            "value": "Rainbow sky"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Foreground",
+            "value": "Moonscape"
+        },
+        {
+            "display_type": "string",
+            "trait_type": "Object",
+            "value": "Door frame"
+        }
+    ],
+    "description": "A project for duck holders and newcomers alike, see all of your Zilliqa NFTs in one place.",
+    "name": "Ponds Alpha #555",
+    "rarity": 2.83,
+    "resources": [
+        {
+            "uri": "ipfs://QmUgDpYZDvpuM6H1ZXH7vMta547DoBGiyya3QHbbTweskh",
+            "mime_type": "image/png"
+        }
+    ]
+}

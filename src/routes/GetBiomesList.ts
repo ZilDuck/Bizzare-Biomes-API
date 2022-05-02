@@ -5,6 +5,7 @@ export type worldLevelBiome = {
   bottomColour?:string,
   topColour?:string
 }
+
 const biomesList: Array<worldLevelBiome> = [
     {
         name: 'Aurora',
