@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express'
 import fs from 'fs'
-import { getMintedBiomes } from '../helpers/biomes-helpers'
+import { getABiome } from '../helpers/biomes-helpers'
 
 export const GetBiomeByID = async (req: Request, res: Response, next: NextFunction) => {
     console.log('get biome')
@@ -18,9 +18,10 @@ export const GetBiomeByID = async (req: Request, res: Response, next: NextFuncti
                 next(err)
             }
         } else {
-            const mintedBiomes = await getMintedBiomes()
-            const biome = mintedBiomes?.find((x:any) => parseInt(x.id) == parseInt(id))
-            res.status(200).json(biome)
+
+            const data = await getABiome(id)
+            console.log(`fuck you ${JSON.stringify(data)}`)
+            res.status(200).json(data)
         }
     } catch (err) {
         console.log(err)
