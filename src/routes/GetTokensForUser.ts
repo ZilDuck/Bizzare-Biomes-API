@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from 'express'
 import { API } from '../api'
 
 export const GetTokensForUser = async (req: Request, res: Response, next: NextFunction) => {
-    console.log(req.params.user)
+    console.log(`GetTokensForUser ${req.params.user}`)
     
     let size = parseInt(String(req.query.size))
     let page = parseInt(String(req.query.page))

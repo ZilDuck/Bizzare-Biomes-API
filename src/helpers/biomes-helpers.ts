@@ -2,7 +2,10 @@ import { getMintedCount, getAllTokenHolders, getATokenHolders } from "./zilliqa-
 import { toBech32Address } from "@zilliqa-js/zilliqa";
 
 let allBiomes: { id: string; data: Buffer }[] = []
+let sortedBiomes: { streetName: string; data: { id: string; data: Buffer } }[] = []
 const metadataDir = '../../metadata/metadata/'
+
+
 
 const loadBiomesOnStart = () => {
     for (let id = 1; id <= 3000; id++) {
@@ -11,6 +14,11 @@ const loadBiomesOnStart = () => {
         const data =  require(filePath)
         console.log({ id: String(id).padStart(4, '0'), data: data })
 
+        const streetName = data.name.replace(/\d+/g, '').substring(1, data.name.length);
+        console.log(`---`)
+        console.log(streetName)
+        sortedBiomes.push({ streetName: streetName, data: { id: String(id).padStart(4, '0'), data: data } })
+
         allBiomes.push({ id: String(id).padStart(4, '0'), data: data })
       } catch (err) {
         console.log(err)
@@ -18,6 +26,23 @@ const loadBiomesOnStart = () => {
     }
 }
 loadBiomesOnStart()
+
+
+const getStreetNames = async (streetName: string) => {
+  const holders = await getAllTokenHolders()
+
+   const result = sortedBiomes.filter(x => x.streetName == streetName).map(x => {
+    let base16 = holders!.find(y => parseInt(y.id) == parseInt(x.data.id))!.address
+    let bech32 = toBech32Address(base16)
+    return {
+      base16,
+      bech32,
+      ...x
+    }
+  })
+   console.log(`getStreetNames - ${JSON.stringify(result, null, 2)}`)
+   return JSON.parse(JSON.stringify(result))
+}
 
 const getMintedBiomes = async () => {
   try {
@@ -69,6 +94,7 @@ const getABiome = async (id: string) => {
 }
 
 export {
+  getStreetNames,
   getMintedBiomes,
   getABiome
 }
