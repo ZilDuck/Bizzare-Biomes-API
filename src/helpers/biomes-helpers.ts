@@ -1,8 +1,21 @@
 import { getMintedCount, getAllTokenHolders, getATokenHolders } from "./zilliqa-helpers"
 import { toBech32Address } from "@zilliqa-js/zilliqa";
+import { orderBy } from "lodash";
+import { match } from "assert";
 
-let allBiomes: { id: string; data: Buffer }[] = []
-let sortedBiomes: { streetName: string; data: { id: string; data: Buffer } }[] = []
+interface Resource {
+  uri: string;
+  mime_type: string;
+}
+interface Attribute {
+  display_type: string;
+  trait_type: string;
+  value: string;
+}
+
+let allBiomes: { id: string; data: Object }[] = []
+let allBiomesFormatted: { streetName: string; houseNumber: number; data: {id: string; data: { name: string; resources: Array<Resource>; attributes: Array<Attribute> }}}[] = []
+let sortedResult: { streetName: string; houseNumber: number; data: {id: string; data: { name: string; resources: Array<Resource>; attributes: Array<Attribute> }}}[] = []
 const metadataDir = '../../metadata/metadata/'
 
 
@@ -15,9 +28,8 @@ const loadBiomesOnStart = () => {
         console.log({ id: String(id).padStart(4, '0'), data: data })
 
         const streetName = data.name.replace(/\d+/g, '').substring(1, data.name.length);
-        console.log(`---`)
-        console.log(streetName)
-        sortedBiomes.push({ streetName: streetName, data: { id: String(id).padStart(4, '0'), data: data } })
+        const houseNumber = parseInt(data.name.match(/\d+/)[0], 10)
+        allBiomesFormatted.push({ streetName: streetName, houseNumber: houseNumber, data: { id: String(id).padStart(4, '0'), data: data } })
 
         allBiomes.push({ id: String(id).padStart(4, '0'), data: data })
       } catch (err) {
@@ -31,7 +43,7 @@ loadBiomesOnStart()
 const getStreetNames = async (streetName: string) => {
   const holders = await getAllTokenHolders()
 
-   const result = sortedBiomes.filter(x => x.streetName == streetName).map(x => {
+   const result = allBiomesFormatted.filter(x => x.streetName.toLowerCase() == streetName.toLowerCase()).map(x => {
     let base16 = holders!.find(y => parseInt(y.id) == parseInt(x.data.id))!.address
     let bech32 = toBech32Address(base16)
     return {
@@ -40,9 +52,13 @@ const getStreetNames = async (streetName: string) => {
       ...x
     }
   })
-   console.log(`getStreetNames - ${JSON.stringify(result, null, 2)}`)
-   return JSON.parse(JSON.stringify(result))
+
+  sortedResult = orderBy(result, [(b) => b.houseNumber], "asc")  
+
+  console.log(`getStreetNames - ${JSON.stringify(result, null, 2)}`)
+  return JSON.parse(JSON.stringify(sortedResult))
 }
+
 
 const getMintedBiomes = async () => {
   try {
@@ -61,7 +77,7 @@ const getMintedBiomes = async () => {
         }
       })
 
-      
+      console.log(`getMintedBiomes - ${matchedOwners}`)
       return matchedOwners
   } catch (err) {
       console.log(err)

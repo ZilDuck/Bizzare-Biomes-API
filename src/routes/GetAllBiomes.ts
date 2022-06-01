@@ -1,3 +1,6 @@
+import { NextFunction, Request, Response } from 'express'
+import { API } from '../api'
+
 export type worldLevelBiome = {
   name:string,
   sitePath:string,
@@ -142,6 +145,7 @@ const biomesList: Array<worldLevelBiome> = [
     }
   ]
 
-export const GetBiomesList = () => {
-  return biomesList
+  export const GetBiomesCSS = async (req: Request, res: Response, next: NextFunction) => {
+    console.log(`GetBiomesCSS ${JSON.stringify(biomesList)}`)
+    res.status(200).json(biomesList)
 }

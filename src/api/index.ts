@@ -6,6 +6,9 @@ import {
     apiEndpoint
 } from '../helpers/env-variables'
 
+import {
+  fromBech32Address,
+} from "@zilliqa-js/crypto";
 
 const base = apiEndpoint
 
