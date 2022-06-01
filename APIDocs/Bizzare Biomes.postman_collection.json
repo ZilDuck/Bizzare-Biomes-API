@@ -9,133 +9,153 @@
 			"name": "Biomes",
 			"item": [
 				{
-					"name": "GetBiomeByID",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:4000/biome",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "4000",
-							"path": [
-								"biome"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GetBiomesCSS",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:4000/biome/data",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "4000",
-							"path": [
-								"biome",
-								"data"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GetBiomesForStreetName",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:4000/street/Arid Lodge",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "4000",
-							"path": [
-								"street",
-								"Arid Lodge"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GetBiomesByHolder",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:4000/biomes/0x3703A6FE5DD19689b2Ee47E2930DD15c694e6450",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "4000",
-							"path": [
-								"biomes",
-								"0x3703A6FE5DD19689b2Ee47E2930DD15c694e6450"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GetHeldBiomesForBase16",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:4000/biomes/0x3703A6FE5DD19689b2Ee47E2930DD15c694e6450",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "4000",
-							"path": [
-								"biomes",
-								"0x3703A6FE5DD19689b2Ee47E2930DD15c694e6450"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GetHeldNFTsForBase16",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:4000/address/0x3703A6FE5DD19689b2Ee47E2930DD15c694e6450?page=1&size=50",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "4000",
-							"path": [
-								"address",
-								"0x3703A6FE5DD19689b2Ee47E2930DD15c694e6450"
-							],
-							"query": [
-								{
-									"key": "page",
-									"value": "1"
-								},
-								{
-									"key": "size",
-									"value": "50"
+					"name": "/Biome",
+					"item": [
+						{
+							"name": "GetBiomesCSS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/biome/data",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"biome",
+										"data"
+									]
 								}
-							]
+							},
+							"response": []
+						},
+						{
+							"name": "GetBiomeByID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/biome/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"biome",
+										"1"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
+				},
+				{
+					"name": "/Biomes",
+					"item": [
+						{
+							"name": "GetBiomesHeldByBase16",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/biomes/0x3703A6FE5DD19689b2Ee47E2930DD15c694e6450",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"biomes",
+										"0x3703A6FE5DD19689b2Ee47E2930DD15c694e6450"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "/Street",
+					"item": [
+						{
+							"name": "GetBiomesByStreet",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/street",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"street"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetAllStreets",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/street/Arid Lodge",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"street",
+										"Arid Lodge"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "/Address",
+					"item": [
+						{
+							"name": "GetHeldNFTsForBase16",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/address/0x3703A6FE5DD19689b2Ee47E2930DD15c694e6450?page=1&size=50",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"address",
+										"0x3703A6FE5DD19689b2Ee47E2930DD15c694e6450"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "size",
+											"value": "50"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		}

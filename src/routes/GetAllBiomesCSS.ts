@@ -145,7 +145,12 @@ const biomesList: Array<worldLevelBiome> = [
     }
   ]
 
-  export const GetBiomesCSS = async (req: Request, res: Response, next: NextFunction) => {
+  export const ReturnBiomeCSSData = function()
+  {
+      return biomesList
+  }
+
+  export const GetAllBiomesCSS = async (req: Request, res: Response, next: NextFunction) => {
     console.log(`GetBiomesCSS ${JSON.stringify(biomesList)}`)
     res.status(200).json(biomesList)
 }
