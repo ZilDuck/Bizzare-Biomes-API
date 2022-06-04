@@ -11,8 +11,8 @@ export type worldLevelBiome = {
 
 const biomesList: Array<worldLevelBiome> = [
     {
-        name: 'Aurora',
-        sitePath: 'aurora',
+        name: 'Arid Drive',
+        sitePath: 'Arid Drive',
         imagePath: '/assets/backgrounds/Aurora borealis sky.png',
         bottomColour: '#00383e',
         topColour: '#00383e'

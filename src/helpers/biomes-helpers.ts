@@ -86,16 +86,17 @@ const getMintedBiomes = async () => {
 
 const getABiome = async (id: string) => {
   try {
-
-      const holder = await getATokenHolders(id)
+      const paddedID = id.padStart(4, '0')
+      const nonPaddedID = paddedID.replace(/^0+/, '');
+      const holder = await getATokenHolders(nonPaddedID)
     
-      console.log(`querying for ${parseInt(id)} got ${holder}`)
+      console.log(`querying for ${parseInt(nonPaddedID)} got ${holder}`)
 
     
-        let base16 = holder!.find(y => parseInt(y.id) == parseInt(id))!.address
+        let base16 = holder!.find(y => parseInt(y.id) == parseInt(nonPaddedID))!.address
         let bech32 = toBech32Address(base16)
 
-        const filePath = `${metadataDir}${String(id).padStart(4, '0')}.json`
+        const filePath = `${metadataDir}${String(paddedID)}.json`
         const data =  require(filePath)
         console.log(allBiomes)
         return {

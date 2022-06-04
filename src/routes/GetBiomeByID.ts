@@ -18,7 +18,6 @@ export const GetBiomeByID = async (req: Request, res: Response, next: NextFuncti
                 next(err)
             }
         } else {
-
             const data = await getABiome(id)
             console.log(`fuck you ${JSON.stringify(data)}`)
             res.status(200).json(data)
