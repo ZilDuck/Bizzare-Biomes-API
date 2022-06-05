@@ -3,7 +3,6 @@ import fs from 'fs'
 import { getABiome } from '../helpers/biomes-helpers'
 
 export const GetBiomeByID = async (req: Request, res: Response, next: NextFunction) => {
-    console.log('get biome')
     const id = req.params.id
 
     try {
@@ -19,7 +18,7 @@ export const GetBiomeByID = async (req: Request, res: Response, next: NextFuncti
             }
         } else {
             const data = await getABiome(id)
-            console.log(`fuck you ${JSON.stringify(data)}`)
+            console.log("Biome data: %j", data)
             res.status(200).json(data)
         }
     } catch (err) {

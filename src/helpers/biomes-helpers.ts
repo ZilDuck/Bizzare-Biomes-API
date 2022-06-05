@@ -12,10 +12,20 @@ interface Attribute {
   trait_type: string;
   value: string;
 }
+interface Biome {
+  streetName: string;
+  houseNumber: number;
+  id: string;
+  data: {
+    name: string;
+    resources: Array<Resource>;
+    attributes: Array<Attribute>;
+  }
+}
 
-let allBiomes: { id: string; data: Object }[] = []
-let allBiomesFormatted: { streetName: string; houseNumber: number; data: {id: string; data: { name: string; resources: Array<Resource>; attributes: Array<Attribute> }}}[] = []
-let sortedResult: { streetName: string; houseNumber: number; data: {id: string; data: { name: string; resources: Array<Resource>; attributes: Array<Attribute> }}}[] = []
+let allStreets = new Set<String>();
+let sortedResult = new Array<Biome>();
+let allBiomesFormatted = new Array<Biome>();
 const metadataDir = '../../metadata/metadata/'
 
 
@@ -28,10 +38,18 @@ const loadBiomesOnStart = () => {
         console.log({ id: String(id).padStart(4, '0'), data: data })
 
         const streetName = data.name.replace(/\d+/g, '').substring(1, data.name.length);
+        allStreets.add(streetName);
+        
         const houseNumber = parseInt(data.name.match(/\d+/)[0], 10)
-        allBiomesFormatted.push({ streetName: streetName, houseNumber: houseNumber, data: { id: String(id).padStart(4, '0'), data: data } })
+        allBiomesFormatted.push({ 
+          streetName: streetName, 
+          houseNumber: houseNumber, 
+          id: String(id).padStart(4, '0'), 
+          data: { 
+            ...data 
+          } 
+        })
 
-        allBiomes.push({ id: String(id).padStart(4, '0'), data: data })
       } catch (err) {
         console.log(err)
       }
@@ -40,23 +58,36 @@ const loadBiomesOnStart = () => {
 loadBiomesOnStart()
 
 
-const getStreetNames = async (streetName: string) => {
-  const holders = await getAllTokenHolders()
+const getStreetNames = async () => {
+  return [...allStreets];
+}
 
-   const result = allBiomesFormatted.filter(x => x.streetName.toLowerCase() == streetName.toLowerCase()).map(x => {
-    let base16 = holders!.find(y => parseInt(y.id) == parseInt(x.data.id))!.address
-    let bech32 = toBech32Address(base16)
-    return {
-      base16,
-      bech32,
-      ...x
-    }
+
+const getBiomesByStreetName = async (streetName: string) => {
+  const result = allBiomesFormatted.filter(
+    biome => biome.streetName.toLocaleLowerCase() == streetName.toLocaleLowerCase()
+  )
+  return result
+}
+
+const getOwnedBiomesByStreetName = async (streetName: string) => {
+  const biomesByStreetName = await getBiomesByStreetName(streetName)
+  const holders = await getAllTokenHolders()
+  console.log("Holders: %s ... %j", holders, holders);
+
+   const result = biomesByStreetName.map(
+     biome => {
+      let base16 = holders!.find(holder => parseInt(holder.id) == parseInt(biome.id))!.address
+      let bech32 = toBech32Address(base16)
+      return {
+        base16,
+        bech32,
+        ...biome
+      }
   })
 
-  sortedResult = orderBy(result, [(b) => b.houseNumber], "asc")  
-
-  console.log(`getStreetNames - ${JSON.stringify(result, null, 2)}`)
-  return JSON.parse(JSON.stringify(sortedResult))
+  sortedResult = orderBy(result, [(biome) => biome.houseNumber], "asc")
+  return sortedResult
 }
 
 
@@ -65,17 +96,18 @@ const getMintedBiomes = async () => {
       const currentID = await getMintedCount()
       const holders = await getAllTokenHolders()
       
-      const ducksMinted = allBiomes.filter(x => parseInt(x.id) <= currentID)
+      const mintedBiomes = allBiomesFormatted.filter(biome => parseInt(biome.id) <= currentID)
       
-      const matchedOwners = ducksMinted.map(x => {
-        let base16 = holders!.find(y => parseInt(y.id) == parseInt(x.id))!.address
-        let bech32 = toBech32Address(base16)
-        return {
-          base16,
-          bech32,
-          ...x
-        }
-      })
+      const matchedOwners = mintedBiomes.map(
+        biome => {
+          let base16 = holders!.find(holder => parseInt(holder.id) == parseInt(biome.id))!.address
+          let bech32 = toBech32Address(base16)
+          return {
+            base16,
+            bech32,
+            ...biome
+          }
+        })
 
       console.log(`getMintedBiomes - ${matchedOwners}`)
       return matchedOwners
@@ -90,20 +122,17 @@ const getABiome = async (id: string) => {
       const nonPaddedID = paddedID.replace(/^0+/, '');
       const holder = await getATokenHolders(nonPaddedID)
     
-      console.log(`querying for ${parseInt(nonPaddedID)} got ${holder}`)
+      console.log("Querying for %s got %j", nonPaddedID, holder)
+      const biome = allBiomesFormatted.filter(biome => biome.id == paddedID)[0]
 
-    
-        let base16 = holder!.find(y => parseInt(y.id) == parseInt(nonPaddedID))!.address
-        let bech32 = toBech32Address(base16)
-
-        const filePath = `${metadataDir}${String(paddedID)}.json`
-        const data =  require(filePath)
-        console.log(allBiomes)
-        return {
-          base16,
-          bech32,
-          data
-        }
+      let base16 = holder!.find(holder => parseInt(holder.id) == parseInt(nonPaddedID))!.address
+      let bech32 = toBech32Address(base16)
+      
+      return {
+        base16,
+        bech32,
+        biome
+      }
 
   } catch (err) {
       console.log(err)
@@ -112,6 +141,8 @@ const getABiome = async (id: string) => {
 
 export {
   getStreetNames,
+  getBiomesByStreetName,
+  getOwnedBiomesByStreetName,
   getMintedBiomes,
   getABiome
 }

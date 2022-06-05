@@ -35,7 +35,7 @@ const getAllTokenHolders = async () => {
       const arrayResult = Object.entries(result).map((x:any) => ({ id: x[0], address: x[1] }))
       return arrayResult
   } catch (err) {
-
+    console.error("There was an error trying to get all Token holders: ", err)
   }
 }
 

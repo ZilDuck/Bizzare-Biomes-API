@@ -10,7 +10,8 @@ import { GetBiomesByAttribute } from './GetBiomesByAttribute'
 
 export const initRoutes = (app: Express.Application) => {
 	// get all the biomes CSS details
-	app.get('/biome/data', GetAllBiomesCSS) 
+	app.get('/biome/data', GetAllBiomesCSS)
+
 	// get a single biome                
 	app.get('/biome/:id', GetBiomeByID)                  
 
@@ -18,9 +19,10 @@ export const initRoutes = (app: Express.Application) => {
 	app.get('/biomes/:base16', GetBiomesHeldByBase16)    
 
 	// get all of the unique street names 
-	app.get('/street/:streetName', GetBiomesByStreet)  
+	app.get('/street/:streetName', GetBiomesByStreet)
+
 	// get all the biomes on a street
-	app.get('/street', GetAllStreets)  
+	app.get('/street', GetAllStreets)
 	
 	// get all the NFTs which a biome/user has 
 	app.get('/address/:base16', GetHeldNFTsForBase16)
