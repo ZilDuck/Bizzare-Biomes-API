@@ -1,11 +1,11 @@
 import { NextFunction, Request, Response } from 'express'
 import { getMintedBiomes } from '../helpers/biomes-helpers'
-import { GetBiomesList } from './GetBiomesList'
+import { ReturnBiomeCSSData } from './GetAllBiomesCSS'
 
-export const GetBiomesByBiome = async (req: Request, res: Response, next: NextFunction) => {
+export const GetBiomesByAttribute = async (req: Request, res: Response, next: NextFunction) => {
     console.log('get biome')
     const biomeName = req.params.biome
-    const biomeSearch = GetBiomesList().find(x => x.sitePath == biomeName)
+    const biomeSearch = await ReturnBiomeCSSData().find((x: { sitePath: string }) => x.sitePath == biomeName)
 
     try {
       const mintedBiomes = await getMintedBiomes()

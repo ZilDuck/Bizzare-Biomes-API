@@ -6,6 +6,9 @@ import {
     apiEndpoint
 } from '../helpers/env-variables'
 
+import {
+  fromBech32Address,
+} from "@zilliqa-js/crypto";
 
 const base = apiEndpoint
 
@@ -16,12 +19,10 @@ const getNFT = async (contract:string, id:string|number) => {
       `${base}/nft/${contract}/${id}`,
       {
         headers: {
-          'X-API-KEY': apiKey
+          'X-API-KEY': "cd66db4a-cfc8-4db3-951c-b9c633566196" // pull this value through .env
         }
       }
     )
-
- 
     
     return data
   } catch (error) {
@@ -52,7 +53,7 @@ async function getNFTsForAddress(address: string, page:number, size:number) {
       `${base}/address/${address}/nft`,
       {
         headers: {
-          'X-API-KEY': apiKey
+          'X-API-KEY': "cd66db4a-cfc8-4db3-951c-b9c633566196"
         }
       }
     )

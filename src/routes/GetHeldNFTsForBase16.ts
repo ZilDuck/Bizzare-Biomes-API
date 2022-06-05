@@ -1,8 +1,8 @@
 import { NextFunction, Request, Response } from 'express'
 import { API } from '../api'
 
-export const GetTokensForUser = async (req: Request, res: Response, next: NextFunction) => {
-    console.log(req.params.user)
+export const GetHeldNFTsForBase16 = async (req: Request, res: Response, next: NextFunction) => {
+    console.log(`GetTokensForUser ${req.params.base16}`)
     
     let size = parseInt(String(req.query.size))
     let page = parseInt(String(req.query.page))
@@ -11,8 +11,8 @@ export const GetTokensForUser = async (req: Request, res: Response, next: NextFu
         size = parseInt(String(req.query.size))
         page = parseInt(String(req.query.page))
     }
-
-    let data = await API.getNFTsForAddress(req.params.user, page, size)
+    console.log(`GetTokensForUser ${req.query.size}/${req.query.page}/${req.params.base16}`)
+    let data = await API.getNFTsForAddress(req.params.base16, page, size)
 
     
     res.status(200).json(data)

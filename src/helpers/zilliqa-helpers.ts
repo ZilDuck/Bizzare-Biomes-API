@@ -22,10 +22,10 @@ const zil_ws = {
 const zilliqa = new Zilliqa(zil_api)
 
 const getMintedCount = async () => {
-  return 1000
+  return 3000
 }
 
-const getTokenHolders = async () => {
+const getAllTokenHolders = async () => {
   try {
       const result = (await zilliqa.blockchain.getSmartContractSubState(
           '0x8ab2af0cccee7195a7c16030fbdfde6501d91903', // TEMP CODED TO NFD CONTRACT FOR TESTING
@@ -35,11 +35,30 @@ const getTokenHolders = async () => {
       const arrayResult = Object.entries(result).map((x:any) => ({ id: x[0], address: x[1] }))
       return arrayResult
   } catch (err) {
-
+    console.error("There was an error trying to get all Token holders: ", err)
   }
 }
 
+const getATokenHolders = async (id: string) => {
+  try {
+      const result = (await zilliqa.blockchain.getSmartContractSubState(
+          '0x8ab2af0cccee7195a7c16030fbdfde6501d91903', // TEMP CODED TO NFD CONTRACT FOR TESTING
+          "token_owners",
+          [id]
+      )).result.token_owners
+      console.log(`getATokenHolders - ${JSON.stringify(result)}`)
+  
+      const arrayResult = Object.entries(result).map((x:any) => ({ id: x[0], address: x[1] }))
+      return arrayResult
+  } catch (err) {
+    console.log(`fuckmeintherror`)
+    console.log(err)
+  }
+}
+
+
 export {
   getMintedCount,
-  getTokenHolders
+  getAllTokenHolders,
+  getATokenHolders
 }
