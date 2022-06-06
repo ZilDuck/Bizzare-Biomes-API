@@ -16,7 +16,7 @@ on:
         default:     latest
 env:
   APP: biomes
-  SERVICE: private-api
+  SERVICE: api
 
 jobs:
   deploy:
