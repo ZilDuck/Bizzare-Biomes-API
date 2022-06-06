@@ -3,8 +3,8 @@ RUN apk --no-cache add --update  g++ make python3
 WORKDIR /app
 
 COPY ./src ./package.json ./package-lock.json ./tsconfig.json ./
-RUN npm install
-RUN npm run build
+RUN npm install && \
+    npm run build
 
 FROM node:14.6.0-alpine
 
