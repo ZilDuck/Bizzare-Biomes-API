@@ -4,7 +4,7 @@ const { MessageType } = require('@zilliqa-js/subscriptions')
 // mainnet or testnet
 const network = process.env.NETWORK || 'mainnet'
 
-const nfd_contract = {
+const biome_contract = {
     mainnet: process.env.MAINNET_CONTRACT,
     testnet: process.env.TESTNET_CONTRACT 
 }[network]
@@ -28,7 +28,7 @@ const getMintedCount = async () => {
 const getAllTokenHolders = async () => {
   try {
       const result = (await zilliqa.blockchain.getSmartContractSubState(
-          '0x8ab2af0cccee7195a7c16030fbdfde6501d91903', // TEMP CODED TO NFD CONTRACT FOR TESTING
+          biome_contract, // TEMP CODED TO NFD CONTRACT FOR TESTING
           "token_owners"
       )).result.token_owners
   
@@ -42,7 +42,7 @@ const getAllTokenHolders = async () => {
 const getATokenHolders = async (id: string) => {
   try {
       const result = (await zilliqa.blockchain.getSmartContractSubState(
-          '0x8ab2af0cccee7195a7c16030fbdfde6501d91903', // TEMP CODED TO NFD CONTRACT FOR TESTING
+          biome_contract, // TEMP CODED TO NFD CONTRACT FOR TESTING
           "token_owners",
           [id]
       )).result.token_owners
