@@ -35,7 +35,7 @@ const loadBiomesOnStart = () => {
       try {
         const filePath = `${metadataDir}${String(id).padStart(4, '0')}.json`
         const data =  require(filePath)
-        console.log({ id: String(id).padStart(4, '0'), data: data })
+        // console.log({ id: String(id).padStart(4, '0'), data: data })
 
         const streetName = data.name.replace(/\d+/g, '').substring(1, data.name.length);
         allStreets.add(streetName);
@@ -73,10 +73,14 @@ const getBiomesByStreetName = async (streetName: string) => {
 const getOwnedBiomesByStreetName = async (streetName: string) => {
   const biomesByStreetName = await getBiomesByStreetName(streetName)
   const holders = await getAllTokenHolders()
-  console.log("Holders: %s ... %j", holders, holders);
+  // console.log("Holders: %j", holders)
 
-   const result = biomesByStreetName.map(
-     biome => {
+  const ownedBiomes = biomesByStreetName.filter(
+    biome => holders?.find(holder => parseInt(holder.id) == parseInt(biome.id))
+  )
+
+  const result = ownedBiomes.map(
+    biome => {
       let base16 = holders!.find(holder => parseInt(holder.id) == parseInt(biome.id))!.address
       let bech32 = toBech32Address(base16)
       return {
@@ -93,12 +97,17 @@ const getOwnedBiomesByStreetName = async (streetName: string) => {
 
 const getMintedBiomes = async () => {
   try {
-      const currentID = await getMintedCount()
+      const currentID = await getMintedCount() // this just returns 3000?
       const holders = await getAllTokenHolders()
+
+      console.log("Current ID: ", currentID)
       
       const mintedBiomes = allBiomesFormatted.filter(biome => parseInt(biome.id) <= currentID)
+      const ownedBiomes = mintedBiomes.filter(
+        biome => holders?.find(holder => parseInt(holder.id) == parseInt(biome.id))
+      )
       
-      const matchedOwners = mintedBiomes.map(
+      const matchedOwners = ownedBiomes.map(
         biome => {
           let base16 = holders!.find(holder => parseInt(holder.id) == parseInt(biome.id))!.address
           let bech32 = toBech32Address(base16)

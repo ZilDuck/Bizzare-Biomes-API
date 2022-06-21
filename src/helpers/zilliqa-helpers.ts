@@ -1,5 +1,6 @@
 const { Zilliqa } = require('@zilliqa-js/zilliqa')
 const { MessageType } = require('@zilliqa-js/subscriptions')
+require('dotenv').config()
 
 // mainnet or testnet
 const network = process.env.NETWORK || 'mainnet'
