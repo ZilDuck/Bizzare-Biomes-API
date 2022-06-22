@@ -99,8 +99,6 @@ const getMintedBiomes = async () => {
   try {
       const currentID = await getMintedCount() // this just returns 3000?
       const holders = await getAllTokenHolders()
-
-      console.log("Current ID: ", currentID)
       
       const mintedBiomes = allBiomesFormatted.filter(biome => parseInt(biome.id) <= currentID)
       const ownedBiomes = mintedBiomes.filter(
@@ -118,7 +116,6 @@ const getMintedBiomes = async () => {
           }
         })
 
-      console.log(`getMintedBiomes - ${matchedOwners}`)
       return matchedOwners
   } catch (err) {
       console.log(err)
