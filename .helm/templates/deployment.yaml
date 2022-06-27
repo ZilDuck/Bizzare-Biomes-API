@@ -26,9 +26,11 @@ spec:
             - name: NETWORK
               value: {{ .Values.env.network | quote }}
             - name: TESTNET_CONTRACT
-              value: {{ .Values.env.testnetContract | quote }}
+              value: {{ .Values.env.contract | quote }}
+            - name: MAINNET_CONTRACT
+              value: {{ .Values.env.contract | quote }}
             - name: PROXY_CONTRACT
-              value: {{ .Values.env.proxyContract | quote }}
+              value: {{ .Values.env.proxy | quote }}
           resources:
             limits:
               cpu: {{ .Values.resources.limits.cpu | quote }}
@@ -36,21 +38,7 @@ spec:
             requests:
               cpu: {{ .Values.resources.requests.cpu | quote }}
               memory: {{ .Values.resources.requests.memory | quote }}
-          volumeMounts:
-            - name: logs
-              mountPath: {{ .Values.logPath }}
-        - name: filebeat
-          image: elastic/filebeat:7.17.0
-          imagePullPolicy: IfNotPresent
-          volumeMounts:
-            - name: logs
-              mountPath: {{ .Values.logPath }}
-            - name: configmap
-              mountPath: /usr/share/filebeat/filebeat.yaml
-              subPath: filebeat.yaml
       volumes:
         - name: configmap
           configMap:
             name: {{ .Release.Name }}
-        - name:  logs
-          emptyDir: {}
