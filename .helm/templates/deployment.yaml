@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}
+spec:
+  replicas: {{ .Values.replicas }}
+  selector:
+    matchLabels:
+      service: {{ .Chart.Name }}
+  template:
+    metadata:
+      labels:
+        service: {{ .Chart.Name }}
+      annotations:
+        rollme: {{ randAlphaNum 5 | quote }}
+    spec:
+      imagePullSecrets:
+        - name: aws-registry
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.app.url }}:{{ .Values.image.app.tag }}"
+          imagePullPolicy: {{ .Values.image.app.pullPolicy }}
+          ports:
+          - containerPort: {{ .Values.port }}
+          env:
+            - name: NETWORK
+              value: {{ .Values.env.network | quote }}
+            - name: TESTNET_CONTRACT
+              value: {{ .Values.env.testnetContract | quote }}
+            - name: PROXY_CONTRACT
+              value: {{ .Values.env.proxyContract | quote }}
+          resources:
+            limits:
+              cpu: {{ .Values.resources.limits.cpu | quote }}
+              memory: {{ .Values.resources.limits.memory | quote }}
+            requests:
+              cpu: {{ .Values.resources.requests.cpu | quote }}
+              memory: {{ .Values.resources.requests.memory | quote }}
+          volumeMounts:
+            - name: logs
+              mountPath: {{ .Values.logPath }}
+        - name: filebeat
+          image: elastic/filebeat:7.17.0
+          imagePullPolicy: IfNotPresent
+          volumeMounts:
+            - name: logs
+              mountPath: {{ .Values.logPath }}
+            - name: configmap
+              mountPath: /usr/share/filebeat/filebeat.yaml
+              subPath: filebeat.yaml
+      volumes:
+        - name: configmap
+          configMap:
+            name: {{ .Release.Name }}
+        - name:  logs
+          emptyDir: {}
