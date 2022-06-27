@@ -6,6 +6,7 @@ import { GetBiomesByStreet } from './GetBiomesByStreet'
 import { GetHeldNFTsForBase16 } from './GetHeldNFTsForBase16'
 import { GetBiomesHeldByBase16 } from './GetBiomesHeldByBase16' 
 import { GetAllStreets } from './GetAllStreets' 
+import { GetMintData } from './GetMintData'
 import { GetBiomesByAttribute } from './GetBiomesByAttribute' 
 
 export const initRoutes = (app: Express.Application) => {
@@ -26,4 +27,7 @@ export const initRoutes = (app: Express.Application) => {
 	
 	// get all the NFTs which a biome/user has 
 	app.get('/address/:base16', GetHeldNFTsForBase16)
+
+	// get all the NFTs which a biome/user has 
+	app.get('/mintdata', GetMintData)
 }

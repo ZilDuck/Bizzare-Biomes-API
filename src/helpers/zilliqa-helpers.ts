@@ -23,7 +23,16 @@ const zil_ws = {
 const zilliqa = new Zilliqa(zil_api)
 
 const getMintedCount = async () => {
-  return 3000
+  try {
+    const result = (await zilliqa.blockchain.getSmartContractSubState(
+        biome_contract, 
+        "token_id_count"
+    )).result.token_id_count
+
+    return result
+  } catch (err) {
+    console.error("There was an error trying to get the minted count: ", err)
+  }
 }
 
 const getAllTokenHolders = async () => {
