@@ -1,0 +1,29 @@
+image:
+  app:
+    url: 465700395685.dkr.ecr.eu-west-1.amazonaws.com/biomes/api
+    tag: latest
+    pullPolicy: IfNotPresent
+    pullSecret: ""
+  filebeat:
+    url: elastic/filebeat:7.17.0
+    pullPolicy: IfNotPresent
+
+port: 4000
+targetPort: 4000
+
+env:
+  network: testnet
+  testnetContract: 0x9CEC1357a85c2A20E93D26Af2aa7d6Fe5c6a29C1 
+  proxyContract: 0x502640fa81117348a1e475edc417438b09b36912
+
+logPath: /app/logs
+
+replicas: 2
+
+resources:
+  limits:
+    cpu: 0.2
+    memory: 128M
+  requests:
+    cpu: 0.1
+    memory: 64M
