@@ -14,6 +14,7 @@ export const GetBiomeByID = async (req: Request, res: Response, next: NextFuncti
             } catch (err: any) {
                 err.type = 'not-found'
                 err.message = 'Collection metadata does not exist'
+                err.status = 404
                 next(err)
             }
         } else {
