@@ -1,8 +1,9 @@
 namespace: biomes-mainnet
 
 env:
-  network: mainnet
-  contract: 0x8ab2af0cccee7195a7c16030fbdfde6501d91903
+  network:  mainnet
+  contract: 0x38c30391667d178e982af3a14e8bd2aa00efc771
+  proxy:    0xe9a3b0779af1dfa756187f333dba88e8187d21e9
 
 ingress:
   host: api.bizarrebiomes.com
