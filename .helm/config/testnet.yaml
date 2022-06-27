@@ -2,8 +2,8 @@ namespace: biomes-testnet
 
 env:
   network:  testnet
-  contract: 0x8ab2af0cccee7195a7c16030fbdfde6501d91903
-  proxy:    0x8ab2af0cccee7195a7c16030fbdfde6501d91903
+  contract: 0x9CEC1357a85c2A20E93D26Af2aa7d6Fe5c6a29C1
+  proxy:    0x502640fa81117348a1e475edc417438b09b36912
 
 ingress:
   host: staging-api.bizarrebiomes.com
