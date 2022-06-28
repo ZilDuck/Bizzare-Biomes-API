@@ -16,11 +16,9 @@ interface Biome {
   streetName: string;
   houseNumber: number;
   id: string;
-  data: {
-    name: string;
-    resources: Array<Resource>;
-    attributes: Array<Attribute>;
-  }
+  name: string;
+  resources: Array<Resource>;
+  attributes: Array<Attribute>;
 }
 
 let allStreets = new Set<String>();
@@ -45,9 +43,7 @@ const loadBiomesOnStart = () => {
           streetName: streetName, 
           houseNumber: houseNumber, 
           id: String(id).padStart(4, '0'), 
-          data: { 
-            ...data 
-          } 
+          ...data 
         })
 
       } catch (err) {
@@ -137,7 +133,7 @@ const getABiome = async (id: string) => {
       return {
         base16,
         bech32,
-        biome
+        ...biome
       }
 
   } catch (err) {
