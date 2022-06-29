@@ -33,7 +33,6 @@ const loadBiomesOnStart = () => {
       try {
         const filePath = `${metadataDir}${String(id).padStart(4, '0')}.json`
         const data =  require(filePath)
-        // console.log({ id: String(id).padStart(4, '0'), data: data })
 
         const streetName = data.name.replace(/\d+/g, '').substring(1, data.name.length);
         allStreets.add(streetName);
