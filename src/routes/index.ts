@@ -4,6 +4,7 @@ import { GetAllBiomesCSS } from './GetAllBiomesCSS'
 import { GetBiomesByStreet } from './GetBiomesByStreet'
 import { GetHeldNFTsForBase16 } from './GetHeldNFTsForBase16'
 import {GetBiomesHeldByAddress} from './GetBiomesHeldByAddress'
+import { GetRecentlyMintedBiomes } from './GetRecentlyMintedBiomes'
 import { GetAllStreets } from './GetAllStreets' 
 import { GetMintData } from './GetMintData'
 
@@ -13,6 +14,9 @@ export const initRoutes = (app: Express.Application) => {
 
 	// get a single biome                
 	app.get('/biome/:id', GetBiomeByID)                  
+
+	// get all the biomes which a user has
+	app.get('/biomes/recent', GetRecentlyMintedBiomes)
 
 	// get all the biomes which a user has
 	app.get('/biomes/:address', GetBiomesHeldByAddress)
