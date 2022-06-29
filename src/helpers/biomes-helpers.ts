@@ -76,9 +76,9 @@ const getOwnedBiomesByStreetName = async (streetName: string) => {
 
   const result = ownedBiomes.map(
     biome => {
-      let bech16 = holders!.find(holder => parseInt(holder.id) == parseInt(biome.id))!.bech16
-      let bech32 = toBech32Address(bech16)
-      return { bech16, bech32, ...biome }
+      let base16 = holders!.find(holder => parseInt(holder.id) == parseInt(biome.id))!.base16
+      let bech32 = toBech32Address(base16)
+      return { base16, bech32, ...biome }
   })
 
   sortedResult = orderBy(result, [(biome) => biome.houseNumber], "asc")
@@ -88,7 +88,7 @@ const getOwnedBiomesByStreetName = async (streetName: string) => {
 
 const getMintedBiomes = async () => {
   try {
-      const currentID = await getMintedCount() // this just returns 3000?
+      const currentID = await getMintedCount()
       const holders = await getAllTokenHolders()
       
       const mintedBiomes = allBiomesFormatted.filter(biome => parseInt(biome.id) <= currentID)
@@ -98,9 +98,9 @@ const getMintedBiomes = async () => {
 
       return ownedBiomes.map(
         biome => {
-          let bech16 = holders!.find(holder => parseInt(holder.id) == parseInt(biome.id))!.bech16
+          let base16 = holders!.find(holder => parseInt(holder.id) == parseInt(biome.id))!.base16
           let bech32 = holders!.find(holder => parseInt(holder.id) == parseInt(biome.id))!.bech32
-          return { bech16, bech32, ...biome }
+          return { base16, bech32, ...biome }
         })
   } catch (err) {
       console.log(err)
@@ -116,13 +116,13 @@ const getABiome = async (id: string) => {
       console.log("Querying for %s got %j", nonPaddedID, holder)
       const biome = allBiomesFormatted.filter(biome => biome.id == paddedID)[0]
 
-      let bech16 = holder!.find(holder => parseInt(holder.id) == parseInt(nonPaddedID))!.address
-      let bech32 = toBech32Address(bech16)
+      let base16 = holder!.find(holder => parseInt(holder.id) == parseInt(nonPaddedID))!.address
+      let bech32 = toBech32Address(base16)
       
       return {
-        bech16,
-        bech32,
-        ...biome
+          base16,
+          bech32,
+          ...biome
       }
 
   } catch (err) {

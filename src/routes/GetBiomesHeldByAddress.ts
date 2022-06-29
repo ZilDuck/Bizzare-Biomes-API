@@ -8,7 +8,7 @@ export const GetBiomesHeldByAddress = async (req: Request, res: Response, next: 
     try {
       const mintedBiomes = await getMintedBiomes()
       console.log(mintedBiomes)
-      const resultingBiomes = mintedBiomes?.filter((x:any) => (x.bech16 == address || x.bech32 == address))
+      const resultingBiomes = mintedBiomes?.filter((x:any) => (x.base16 == address || x.bech32 == address))
 
       console.log(`GetBiomesHeldByAddress - ${resultingBiomes}`)
       res.status(200).json(resultingBiomes)
