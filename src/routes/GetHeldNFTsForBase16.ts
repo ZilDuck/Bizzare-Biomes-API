@@ -2,8 +2,9 @@ import { NextFunction, Request, Response } from 'express'
 import { API } from '../api'
 
 export const GetHeldNFTsForBase16 = async (req: Request, res: Response, next: NextFunction) => {
+    console.log(req.params)
     console.log(`GetTokensForUser ${req.params.base16}`)
-    
+
     let size = parseInt(String(req.query.size))
     let page = parseInt(String(req.query.page))
 

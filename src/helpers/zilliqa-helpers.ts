@@ -46,7 +46,7 @@ const getAllTokenHolders = async () => {
   
       return Object.entries(result).map((x:any) => ({
           id: x[0],
-          bech16: x[1],
+          base16: x[1],
           bech32: toBech32Address(x[1]),
       }))
   } catch (err) {
