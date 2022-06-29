@@ -1,3 +1,5 @@
+import {toBech32Address} from "@zilliqa-js/zilliqa";
+
 const { Zilliqa } = require('@zilliqa-js/zilliqa')
 const { MessageType } = require('@zilliqa-js/subscriptions')
 require('dotenv').config()
@@ -42,8 +44,11 @@ const getAllTokenHolders = async () => {
           "token_owners"
       )).result.token_owners
   
-      const arrayResult = Object.entries(result).map((x:any) => ({ id: x[0], address: x[1] }))
-      return arrayResult
+      return Object.entries(result).map((x:any) => ({
+          id: x[0],
+          bech16: x[1],
+          bech32: toBech32Address(x[1]),
+      }))
   } catch (err) {
     console.error("There was an error trying to get all Token holders: ", err)
   }
@@ -52,14 +57,13 @@ const getAllTokenHolders = async () => {
 const getATokenHolders = async (id: string) => {
   try {
       const result = (await zilliqa.blockchain.getSmartContractSubState(
-          biome_contract, // TEMP CODED TO NFD CONTRACT FOR TESTING
+          biome_contract,
           "token_owners",
           [id]
       )).result.token_owners
       console.log(`getATokenHolders - ${JSON.stringify(result)}`)
   
-      const arrayResult = Object.entries(result).map((x:any) => ({ id: x[0], address: x[1] }))
-      return arrayResult
+      return Object.entries(result).map((x:any) => ({ id: x[0], address: x[1] }))
   } catch (err) {
     console.log(`fuckmeintherror`)
     console.log(err)

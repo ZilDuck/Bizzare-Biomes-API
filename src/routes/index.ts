@@ -1,13 +1,11 @@
 import * as Express from 'express'
-import { NextFunction } from 'express'
 import { GetBiomeByID } from './GetBiomeByID'
 import { GetAllBiomesCSS } from './GetAllBiomesCSS'
 import { GetBiomesByStreet } from './GetBiomesByStreet'
 import { GetHeldNFTsForBase16 } from './GetHeldNFTsForBase16'
-import { GetBiomesHeldByBase16 } from './GetBiomesHeldByBase16' 
+import {GetBiomesHeldByAddress} from './GetBiomesHeldByAddress'
 import { GetAllStreets } from './GetAllStreets' 
 import { GetMintData } from './GetMintData'
-import { GetBiomesByAttribute } from './GetBiomesByAttribute' 
 
 export const initRoutes = (app: Express.Application) => {
 	// get all the biomes CSS details
@@ -17,7 +15,7 @@ export const initRoutes = (app: Express.Application) => {
 	app.get('/biome/:id', GetBiomeByID)                  
 
 	// get all the biomes which a user has
-	app.get('/biomes/:base16', GetBiomesHeldByBase16)    
+	app.get('/biomes/:address', GetBiomesHeldByAddress)
 
 	// get all of the unique street names 
 	app.get('/street/:streetName', GetBiomesByStreet)
