@@ -6,7 +6,6 @@ export const GetRecentlyMintedBiomes = async (req: Request, res: Response, next:
 
     try {
         const mintedBiomes = await getMintedBiomes()
-        console.log(mintedBiomes?.length)
         res.status(200).json(mintedBiomes?.slice(-4).reverse())
     } catch (err) {
         console.log(err)
