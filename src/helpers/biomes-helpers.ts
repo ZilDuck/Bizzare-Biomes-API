@@ -76,13 +76,9 @@ const getOwnedBiomesByStreetName = async (streetName: string) => {
 
   const result = ownedBiomes.map(
     biome => {
-      let base16 = holders!.find(holder => parseInt(holder.id) == parseInt(biome.id))!.address
-      let bech32 = toBech32Address(base16)
-      return {
-        base16,
-        bech32,
-        ...biome
-      }
+      let bech16 = holders!.find(holder => parseInt(holder.id) == parseInt(biome.id))!.bech16
+      let bech32 = toBech32Address(bech16)
+      return { bech16, bech32, ...biome }
   })
 
   sortedResult = orderBy(result, [(biome) => biome.houseNumber], "asc")
@@ -99,19 +95,13 @@ const getMintedBiomes = async () => {
       const ownedBiomes = mintedBiomes.filter(
         biome => holders?.find(holder => parseInt(holder.id) == parseInt(biome.id))
       )
-      
-      const matchedOwners = ownedBiomes.map(
-        biome => {
-          let base16 = holders!.find(holder => parseInt(holder.id) == parseInt(biome.id))!.address
-          let bech32 = toBech32Address(base16)
-          return {
-            base16,
-            bech32,
-            ...biome
-          }
-        })
 
-      return matchedOwners
+      return ownedBiomes.map(
+        biome => {
+          let bech16 = holders!.find(holder => parseInt(holder.id) == parseInt(biome.id))!.bech16
+          let bech32 = holders!.find(holder => parseInt(holder.id) == parseInt(biome.id))!.bech32
+          return { bech16, bech32, ...biome }
+        })
   } catch (err) {
       console.log(err)
   }
@@ -126,11 +116,11 @@ const getABiome = async (id: string) => {
       console.log("Querying for %s got %j", nonPaddedID, holder)
       const biome = allBiomesFormatted.filter(biome => biome.id == paddedID)[0]
 
-      let base16 = holder!.find(holder => parseInt(holder.id) == parseInt(nonPaddedID))!.address
-      let bech32 = toBech32Address(base16)
+      let bech16 = holder!.find(holder => parseInt(holder.id) == parseInt(nonPaddedID))!.address
+      let bech32 = toBech32Address(bech16)
       
       return {
-        base16,
+        bech16,
         bech32,
         ...biome
       }
