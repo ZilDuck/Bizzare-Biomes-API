@@ -1,6 +1,6 @@
 {
     "name": "Bizarre Biomes",
     "description": "2048 Biomes which give the ability to showcase your owned NFTs to the Zilliqa world.",
-    "external_url": "https://duck.community",
-    "animation_url": "https://duck.community/_nuxt/img/duck-homepage-full-800.cb7f1aa.gif"
+    "external_url": "https://bizarrebiomes.com/",
+    "collection_image_url" : "ipfs://QmZ7cTL4NzVqDFVDb84uSiKeB48YP8dQZfmW5p1UqSCnQ9"
 }
