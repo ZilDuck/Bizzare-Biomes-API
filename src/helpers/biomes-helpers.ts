@@ -20,6 +20,14 @@ interface Biome {
   resources: Array<Resource>;
   attributes: Array<Attribute>;
 }
+interface ProjectMetadata {
+  name: string;
+  description: string;
+  external_url: string;
+  animation_url: string;
+  collection_image_url: string;
+  discord: string;
+}
 
 interface ProjectMetadata {
   name: string;
@@ -33,10 +41,10 @@ interface ProjectMetadata {
 let allStreets = new Set<String>();
 let sortedResult = new Array<Biome>();
 let allBiomesFormatted = new Array<Biome>();
+
 let metadataDir = '../../metadata/metadata/'
 let projectMetadataDir = '../../metadata/metadata.json'
 let projectMetadata = new Set<ProjectMetadata>();
-
 
 
 const loadBiomesOnStart = () => {
@@ -69,6 +77,13 @@ const loadBiomesOnStart = () => {
         console.log(err)
       }
     }
+    //add the metadata file too 
+    try {
+      var filePath = `${projectMetadataDir}`
+      projectMetadata = require(filePath)    
+    } catch (err) {
+      console.log(err)
+    }
 }
 loadBiomesOnStart()
 
@@ -80,7 +95,6 @@ const getStreetNames = async () => {
 const getProjectLevelMetadata = async () => {
   return projectMetadata;
 }
-
 
 const getBiomesByStreetName = async (streetName: string) => {
   const result = allBiomesFormatted.filter(

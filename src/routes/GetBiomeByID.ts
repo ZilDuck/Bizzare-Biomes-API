@@ -2,8 +2,6 @@ import { NextFunction, Request, Response } from 'express'
 import fs from 'fs'
 import { getABiome, getProjectLevelMetadata } from '../helpers/biomes-helpers'
 
-import metadata from "../../metadata/metadata.json"
-
 export const GetBiomeByID = async (req: Request, res: Response, next: NextFunction) => {
     const id = req.params.id
 
