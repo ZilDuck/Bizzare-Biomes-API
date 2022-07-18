@@ -1,6 +1,8 @@
 import { NextFunction, Request, Response } from 'express'
 import fs from 'fs'
-import { getABiome } from '../helpers/biomes-helpers'
+import { getABiome, getProjectLevelMetadata } from '../helpers/biomes-helpers'
+
+import metadata from "../../metadata/metadata.json"
 
 export const GetBiomeByID = async (req: Request, res: Response, next: NextFunction) => {
     const id = req.params.id
@@ -8,12 +10,11 @@ export const GetBiomeByID = async (req: Request, res: Response, next: NextFuncti
     try {
         if (id === 'metadata.json') {
             try {
-                const filePath = '../metadata/metadata.json'
-                const data = fs.readFileSync(filePath)
-                res.status(200).json(data)
+                const projectLevelMetadata = await getProjectLevelMetadata()
+                res.status(200).json(projectLevelMetadata)
             } catch (err: any) {
                 err.type = 'not-found'
-                err.message = 'Collection metadata does not exist'
+                err.message = err
                 err.status = 404
                 next(err)
             }

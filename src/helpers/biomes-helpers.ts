@@ -21,19 +21,31 @@ interface Biome {
   attributes: Array<Attribute>;
 }
 
+interface ProjectMetadata {
+  name: string;
+  description: string;
+  external_url: string;
+  animation_url: string;
+  collection_image_url: string;
+  discord: string;
+}
+
 let allStreets = new Set<String>();
 let sortedResult = new Array<Biome>();
 let allBiomesFormatted = new Array<Biome>();
-const metadataDir = '../../metadata/metadata/'
+let metadataDir = '../../metadata/metadata/'
+let projectMetadataDir = '../../metadata/metadata.json'
+let projectMetadata = new Set<ProjectMetadata>();
 
 
 
 const loadBiomesOnStart = () => {
     for (let id = 1; id <= 3000; id++) {
       try {
-        const filePath = `${metadataDir}${String(id).padStart(4, '0')}.json`
+        var filePath = `${metadataDir}${String(id).padStart(4, '0')}.json`
         const data =  require(filePath)
 
+        console.log(data)
         const streetName = data.name.replace(/\d+/g, '').substring(1, data.name.length);
         allStreets.add(streetName);
         
@@ -44,7 +56,15 @@ const loadBiomesOnStart = () => {
           id: String(id).padStart(4, '0'), 
           ...data 
         })
+      } catch (err) {
+        console.log(err)
+      }
 
+      //add the metadata file too 
+      try {
+        filePath = `${projectMetadataDir}`
+        console.log(`hello fucker ${filePath}`)
+        projectMetadata = require(filePath)    
       } catch (err) {
         console.log(err)
       }
@@ -55,6 +75,10 @@ loadBiomesOnStart()
 
 const getStreetNames = async () => {
   return [...allStreets];
+}
+
+const getProjectLevelMetadata = async () => {
+  return projectMetadata;
 }
 
 
@@ -131,6 +155,7 @@ const getABiome = async (id: string) => {
 }
 
 export {
+  getProjectLevelMetadata,
   getStreetNames,
   getBiomesByStreetName,
   getOwnedBiomesByStreetName,
