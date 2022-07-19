@@ -29,15 +29,6 @@ interface ProjectMetadata {
   discord: string;
 }
 
-interface ProjectMetadata {
-  name: string;
-  description: string;
-  external_url: string;
-  animation_url: string;
-  collection_image_url: string;
-  discord: string;
-}
-
 let allStreets = new Set<String>();
 let sortedResult = new Array<Biome>();
 let allBiomesFormatted = new Array<Biome>();
@@ -49,39 +40,36 @@ let projectMetadata = new Set<ProjectMetadata>();
 
 const loadBiomesOnStart = () => {
     for (let id = 1; id <= 3000; id++) {
-      try {
+      try 
+      {
         var filePath = `${metadataDir}${String(id).padStart(4, '0')}.json`
         const data =  require(filePath)
 
-        console.log(data)
         const streetName = data.name.replace(/\d+/g, '').substring(1, data.name.length);
         allStreets.add(streetName);
         
         const houseNumber = parseInt(data.name.match(/\d+/)[0], 10)
-        allBiomesFormatted.push({ 
+        allBiomesFormatted.push(
+        { 
           streetName: streetName, 
           houseNumber: houseNumber, 
           id: String(id).padStart(4, '0'), 
           ...data 
         })
-      } catch (err) {
-        console.log(err)
-      }
-
-      //add the metadata file too 
-      try {
-        filePath = `${projectMetadataDir}`
-        console.log(`hello fucker ${filePath}`)
-        projectMetadata = require(filePath)    
-      } catch (err) {
+      } 
+      catch (err) 
+      {
         console.log(err)
       }
     }
     //add the metadata file too 
-    try {
+    try 
+    {
       var filePath = `${projectMetadataDir}`
       projectMetadata = require(filePath)    
-    } catch (err) {
+    } 
+    catch (err) 
+    {
       console.log(err)
     }
 }

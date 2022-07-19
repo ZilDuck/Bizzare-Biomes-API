@@ -11,14 +11,10 @@ export const GetBiomeByID = async (req: Request, res: Response, next: NextFuncti
                 const projectLevelMetadata = await getProjectLevelMetadata()
                 res.status(200).json(projectLevelMetadata)
             } catch (err: any) {
-                err.type = 'not-found'
-                err.message = err
-                err.status = 404
                 next(err)
             }
         } else {
             const data = await getABiome(id)
-            console.log("Biome data: %j", data)
             res.status(200).json(data)
         }
     } catch (err) {
