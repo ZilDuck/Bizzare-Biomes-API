@@ -1,6 +1,8 @@
 {
     "name": "Bizarre Biomes",
-    "description": "2048 Biomes which give the ability to showcase your owned NFTs to the Zilliqa world.",
+    "description": "3000 bizarrely generated biomes. Created by the Duck team to celebrate the usecase of the indexer `zildexr.com` used to index the NFT data used in applications like `zilkroad.io`.",
     "external_url": "https://bizarrebiomes.com/",
-    "collection_image_url" : "ipfs://QmZ7cTL4NzVqDFVDb84uSiKeB48YP8dQZfmW5p1UqSCnQ9"
+    "collection_image_url" : "ipfs://QmZ7cTL4NzVqDFVDb84uSiKeB48YP8dQZfmW5p1UqSCnQ9",
+    "discord" : "https://discord.gg/CqUT9MX44S",
+    "twitter" : "https://twitter.com/BizarreBiomes"
 }
