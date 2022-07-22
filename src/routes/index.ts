@@ -8,6 +8,8 @@ import { GetRecentlyMintedBiomes } from './GetRecentlyMintedBiomes'
 import { GetAllStreets } from './GetAllStreets' 
 import { GetMintData } from './GetMintData'
 
+
+
 export const initRoutes = (app: Express.Application) => {
 	// get all the biomes CSS details
 	app.get('/biome/data', GetAllBiomesCSS)
