@@ -8,9 +8,9 @@ on:
   workflow_dispatch:
 
 env:
-  AWS_REGION: eu-west-1
+  AWS_REGION: us-east-1
   ECR_REPOSITORY: biomes
-  CONTAINER_NAME: api
+  CONTAINER_NAME: public-api
 
 jobs:
   lint:
